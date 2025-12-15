@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-label="Tau2-bench tool use in customer support: Telecom and Retail accuracy bars comparing GPT-5.2, GPT-5.1, and GPT-4.1">
+  <defs>
+    <linearGradient id="barLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ecff"/>
+      <stop offset="100%" stop-color="#c5dfff"/>
+    </linearGradient>
+    <linearGradient id="barDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5c7fe0"/>
+      <stop offset="100%" stop-color="#4366cf"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #050814; }
+      .panel { fill: rgba(255,255,255,0.02); stroke: rgba(255,255,255,0.10); stroke-width: 1; }
+      .title { fill: #e2e8f0; font: 700 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .subtitle { fill: rgba(226,232,240,0.85); font: 600 13px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .axis-label { fill: rgba(226,232,240,0.75); font: 600 12px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+      .tick { fill: rgba(226,232,240,0.70); font: 600 11px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .grid { stroke: rgba(226,232,240,0.12); stroke-width: 1; }
+      .value { fill: #e2e8f0; font: 700 12px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .xlabel { fill: rgba(226,232,240,0.72); font: 600 11px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .foot { fill: rgba(226,232,240,0.65); font: 500 11px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="430" rx="18" />
+
+  <!-- Panels -->
+  <rect class="panel" x="30" y="22" width="560" height="330" rx="16" />
+  <rect class="panel" x="610" y="22" width="560" height="330" rx="16" />
+
+  <!-- Titles -->
+  <text class="title" x="60" y="55">Tau2-bench Telecom</text>
+  <text class="subtitle" x="60" y="78">Tool use in customer support</text>
+
+  <text class="title" x="640" y="55">Tau2-bench Retail</text>
+  <text class="subtitle" x="640" y="78">Tool use in customer support</text>
+
+  <!-- Y-axis labels -->
+  <text class="axis-label" x="44" y="210" transform="rotate(-90 44 210)">Accuracy</text>
+  <text class="axis-label" x="624" y="210" transform="rotate(-90 624 210)">Accuracy</text>
+
+  <!-- Left chart grid + ticks (chart area: x=95..525, y=110..330) -->
+  <!-- tick y positions: 0,20,40,60,80,100 -->
+  <g>
+    <!-- grid lines -->
+    <line class="grid" x1="90" y1="330" x2="540" y2="330" />
+    <line class="grid" x1="90" y1="286" x2="540" y2="286" />
+    <line class="grid" x1="90" y1="242" x2="540" y2="242" />
+    <line class="grid" x1="90" y1="198" x2="540" y2="198" />
+    <line class="grid" x1="90" y1="154" x2="540" y2="154" />
+    <line class="grid" x1="90" y1="110" x2="540" y2="110" />
+
+    <!-- tick labels -->
+    <text class="tick" x="80" y="334" text-anchor="end">0%</text>
+    <text class="tick" x="80" y="290" text-anchor="end">20%</text>
+    <text class="tick" x="80" y="246" text-anchor="end">40%</text>
+    <text class="tick" x="80" y="202" text-anchor="end">60%</text>
+    <text class="tick" x="80" y="158" text-anchor="end">80%</text>
+    <text class="tick" x="80" y="114" text-anchor="end">100%</text>
+  </g>
+
+  <!-- Right chart grid + ticks (chart area: x=675..1115, y=110..330) -->
+  <g>
+    <line class="grid" x1="670" y1="330" x2="1120" y2="330" />
+    <line class="grid" x1="670" y1="286" x2="1120" y2="286" />
+    <line class="grid" x1="670" y1="242" x2="1120" y2="242" />
+    <line class="grid" x1="670" y1="198" x2="1120" y2="198" />
+    <line class="grid" x1="670" y1="154" x2="1120" y2="154" />
+    <line class="grid" x1="670" y1="110" x2="1120" y2="110" />
+
+    <text class="tick" x="660" y="334" text-anchor="end">0%</text>
+    <text class="tick" x="660" y="290" text-anchor="end">20%</text>
+    <text class="tick" x="660" y="246" text-anchor="end">40%</text>
+    <text class="tick" x="660" y="202" text-anchor="end">60%</text>
+    <text class="tick" x="660" y="158" text-anchor="end">80%</text>
+    <text class="tick" x="660" y="114" text-anchor="end">100%</text>
+  </g>
+
+  <!-- Bars: Telecom -->
+  <!-- Mapping: y = 330 - (value/100)*220 -->
+  <!-- Values: 98.7, 95.6, 57.2, 47.8, 49.2 -->
+  <g>
+    <!-- GPT-5.2 high -->
+    <rect x="95" y="112.9" width="70" height="217.1" rx="10" fill="url(#barLight)" />
+    <text class="value" x="130" y="104" text-anchor="middle">98.7%</text>
+    <!-- GPT-5.1 high -->
+    <rect x="185" y="119.7" width="70" height="210.3" rx="10" fill="url(#barDark)" />
+    <text class="value" x="220" y="110.5" text-anchor="middle">95.6%</text>
+    <!-- GPT-5.2 none -->
+    <rect x="275" y="204.2" width="70" height="125.8" rx="10" fill="url(#barLight)" />
+    <text class="value" x="310" y="195" text-anchor="middle">57.2%</text>
+    <!-- GPT-5.1 none -->
+    <rect x="365" y="224.8" width="70" height="105.2" rx="10" fill="url(#barDark)" />
+    <text class="value" x="400" y="215.5" text-anchor="middle">47.8%</text>
+    <!-- GPT-4.1 -->
+    <rect x="455" y="221.8" width="70" height="108.2" rx="10" fill="url(#barDark)" opacity="0.92" />
+    <text class="value" x="490" y="212.5" text-anchor="middle">49.2%</text>
+  </g>
+
+  <!-- Bars: Retail -->
+  <!-- Values: 82.0, 77.9, 77.6, 62.9, 72.6 -->
+  <g>
+    <!-- GPT-5.2 high -->
+    <rect x="675" y="149.6" width="70" height="180.4" rx="10" fill="url(#barLight)" />
+    <text class="value" x="710" y="140.2" text-anchor="middle">82.0%</text>
+    <!-- GPT-5.1 high -->
+    <rect x="765" y="158.6" width="70" height="171.4" rx="10" fill="url(#barDark)" />
+    <text class="value" x="800" y="149.2" text-anchor="middle">77.9%</text>
+    <!-- GPT-5.2 none -->
+    <rect x="855" y="159.3" width="70" height="170.7" rx="10" fill="url(#barLight)" />
+    <text class="value" x="890" y="149.9" text-anchor="middle">77.6%</text>
+    <!-- GPT-5.1 none -->
+    <rect x="945" y="191.6" width="70" height="138.4" rx="10" fill="url(#barDark)" />
+    <text class="value" x="980" y="182.2" text-anchor="middle">62.9%</text>
+    <!-- GPT-4.1 -->
+    <rect x="1035" y="170.3" width="70" height="159.7" rx="10" fill="url(#barDark)" opacity="0.92" />
+    <text class="value" x="1070" y="160.9" text-anchor="middle">72.6%</text>
+  </g>
+
+  <!-- X labels (Telecom) -->
+  <g>
+    <text class="xlabel" transform="translate(130 362) rotate(-45)" text-anchor="end">GPT-5.2 Thinking (high)</text>
+    <text class="xlabel" transform="translate(220 362) rotate(-45)" text-anchor="end">GPT-5.1 Thinking (high)</text>
+    <text class="xlabel" transform="translate(310 362) rotate(-45)" text-anchor="end">GPT-5.2 Thinking (none)</text>
+    <text class="xlabel" transform="translate(400 362) rotate(-45)" text-anchor="end">GPT-5.1 Thinking (none)</text>
+    <text class="xlabel" transform="translate(490 362) rotate(-45)" text-anchor="end">GPT-4.1</text>
+  </g>
+
+  <!-- X labels (Retail) -->
+  <g>
+    <text class="xlabel" transform="translate(710 362) rotate(-45)" text-anchor="end">GPT-5.2 Thinking (high)</text>
+    <text class="xlabel" transform="translate(800 362) rotate(-45)" text-anchor="end">GPT-5.1 Thinking (high)</text>
+    <text class="xlabel" transform="translate(890 362) rotate(-45)" text-anchor="end">GPT-5.2 Thinking (none)</text>
+    <text class="xlabel" transform="translate(980 362) rotate(-45)" text-anchor="end">GPT-5.1 Thinking (none)</text>
+    <text class="xlabel" transform="translate(1070 362) rotate(-45)" text-anchor="end">GPT-4.1</text>
+  </g>
+
+  <!-- Footnote -->
+  <text class="foot" x="40" y="412">
+    In τ2-bench, models use tools to complete customer support tasks in a multi-turn interaction with a simulated user. Telecom uses a brief helpful system instruction; Airline excluded due to lower-quality grading.
+  </text>
+</svg>

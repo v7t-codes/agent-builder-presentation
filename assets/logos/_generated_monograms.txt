@@ -1,0 +1,131 @@
+11x	11x	part-1-market-segments/10_ai_employees_overlay.md
+a37	a37	part-1-market-segments/09_agent_studios_human_plus.md
+adopt-ai-agent-builder	Adopt AI Agent Builder	part-1-market-segments/07_no_code_visual_and_automation.md
+ag-dev	Ag.dev	part-1-market-segments/07_no_code_visual_and_automation.md
+agenticscale-ai-agent-builder	AgenticScale.AI Agent Builder	part-1-market-segments/07_no_code_visual_and_automation.md
+agno	Agno	part-1-market-segments/06_developer_and_sdk_first.md
+alation-agent-studio	Alation Agent Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+anchor-browser	Anchor Browser	part-1-market-segments/06_developer_and_sdk_first.md
+anguliyam-ai	Anguliyam AI	part-1-market-segments/09_agent_studios_human_plus.md
+anthropic	Anthropic	part-1-market-segments/06_developer_and_sdk_first.md
+artisan	Artisan	part-1-market-segments/10_ai_employees_overlay.md
+atlassian-rovo-studio	Atlassian Rovo Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+autoagent	AutoAgent	part-1-market-segments/06_developer_and_sdk_first.md
+automaited	Automaited	part-1-market-segments/07_no_code_visual_and_automation.md
+automation-anywhere	Automation Anywhere	part-1-market-segments/07_no_code_visual_and_automation.md
+avenue-code-agentic-ai-jumpstart	Avenue Code (Agentic AI JumpStart)	part-1-market-segments/09_agent_studios_human_plus.md
+aws-amazon-bedrock-agentcore	AWS Amazon Bedrock AgentCore	part-1-market-segments/06_developer_and_sdk_first.md
+bardeen	Bardeen	part-1-market-segments/07_no_code_visual_and_automation.md
+beam-ai	Beam AI	part-1-market-segments/07_no_code_visual_and_automation.md
+beeai-framework	BeeAI Framework	part-1-market-segments/06_developer_and_sdk_first.md
+boomi-agentstudio	Boomi Agentstudio	part-1-market-segments/07_no_code_visual_and_automation.md
+botpress	Botpress	part-1-market-segments/07_no_code_visual_and_automation.md
+browser-use	Browser Use	part-1-market-segments/06_developer_and_sdk_first.md
+browserbase-stagehand	Browserbase Stagehand	part-1-market-segments/06_developer_and_sdk_first.md
+centric-consulting-ai-agent-development-services	Centric Consulting (AI Agent Development Services)	part-1-market-segments/09_agent_studios_human_plus.md
+cerebrum-aios-sdk	Cerebrum (AIOS SDK)	part-1-market-segments/06_developer_and_sdk_first.md
+cognition-devin	Cognition (Devin)	part-1-market-segments/10_ai_employees_overlay.md
+cohere-tool-use-and-agents	Cohere (Tool use & agents)	part-1-market-segments/06_developer_and_sdk_first.md
+crewai	CrewAI	part-1-market-segments/06_developer_and_sdk_first.md
+cyberdesk	Cyberdesk	part-1-market-segments/06_developer_and_sdk_first.md
+cykel-ai	Cykel AI	part-1-market-segments/10_ai_employees_overlay.md
+databricks-agent-bricks	Databricks Agent Bricks	part-1-market-segments/06_developer_and_sdk_first.md
+den-getden	Den (GetDen)	part-1-market-segments/07_no_code_visual_and_automation.md
+dify	Dify	part-1-market-segments/07_no_code_visual_and_automation.md
+dspy	DSPy	part-1-market-segments/06_developer_and_sdk_first.md
+dura-digital-ai-agents-studio	Dura Digital (AI Agents Studio)	part-1-market-segments/09_agent_studios_human_plus.md
+dust	Dust	part-1-market-segments/07_no_code_visual_and_automation.md
+dynamiq	Dynamiq	part-1-market-segments/07_no_code_visual_and_automation.md
+ema	Ema	part-1-market-segments/10_ai_employees_overlay.md
+flowise	Flowise	part-1-market-segments/07_no_code_visual_and_automation.md
+freshworks-ai-agent-studio	Freshworks AI Agent Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+gain	Gain	part-1-market-segments/10_ai_employees_overlay.md
+google-cloud-vertex-ai	Google Cloud Vertex AI	part-1-market-segments/06_developer_and_sdk_first.md
+gumloop	Gumloop	part-1-market-segments/07_no_code_visual_and_automation.md
+harbinger-agentic-ai-studio	Harbinger (Agentic AI Studio)	part-1-market-segments/09_agent_studios_human_plus.md
+harte-io	Harte.io	part-1-market-segments/09_agent_studios_human_plus.md
+haystack	Haystack	part-1-market-segments/06_developer_and_sdk_first.md
+hubspot-breeze-agents-studio	HubSpot Breeze Agents / Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+hugging-face-smolagents	Hugging Face smolagents	part-1-market-segments/06_developer_and_sdk_first.md
+hwah-industries-llc	HWAH Industries LLC	part-1-market-segments/09_agent_studios_human_plus.md
+hyland-ai-agent-builder	Hyland AI Agent Builder	part-1-market-segments/07_no_code_visual_and_automation.md
+hypermindz-agentic-platform	Hypermindz Agentic Platform	part-1-market-segments/07_no_code_visual_and_automation.md
+ibm-watsonx-orchestrate	IBM watsonx Orchestrate	part-1-market-segments/06_developer_and_sdk_first.md
+implement-ai	Implement AI	part-1-market-segments/10_ai_employees_overlay.md
+induced-ai	Induced AI	part-1-market-segments/06_developer_and_sdk_first.md
+infosys-agentic-foundry	Infosys (Agentic Foundry)	part-1-market-segments/09_agent_studios_human_plus.md
+invisible-technologies	Invisible Technologies	part-1-market-segments/09_agent_studios_human_plus.md
+jinba	Jinba	part-1-market-segments/07_no_code_visual_and_automation.md
+keepler-ai-agents-jumpstart-program	Keepler (AI Agents Jumpstart Program)	part-1-market-segments/09_agent_studios_human_plus.md
+kissflow	Kissflow	part-1-market-segments/07_no_code_visual_and_automation.md
+langchain	LangChain	part-1-market-segments/06_developer_and_sdk_first.md
+langflow	Langflow	part-1-market-segments/07_no_code_visual_and_automation.md
+langgraph	LangGraph	part-1-market-segments/06_developer_and_sdk_first.md
+leaping-ai	Leaping AI	part-1-market-segments/10_ai_employees_overlay.md
+letta	Letta	part-1-market-segments/06_developer_and_sdk_first.md
+lindy	Lindy	part-1-market-segments/10_ai_employees_overlay.md
+lindy-ai	Lindy.ai	part-1-market-segments/07_no_code_visual_and_automation.md
+llamaindex	LlamaIndex	part-1-market-segments/06_developer_and_sdk_first.md
+magnitude	Magnitude	part-1-market-segments/06_developer_and_sdk_first.md
+maisa	Maisa	part-1-market-segments/10_ai_employees_overlay.md
+make-ai-agents	Make AI Agents	part-1-market-segments/07_no_code_visual_and_automation.md
+mastra	Mastra	part-1-market-segments/06_developer_and_sdk_first.md
+mentium	Mentium	part-1-market-segments/10_ai_employees_overlay.md
+microsoft-autogen	Microsoft AutoGen	part-1-market-segments/06_developer_and_sdk_first.md
+microsoft-copilot-studio	Microsoft Copilot Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+microsoft-semantic-kernel	Microsoft Semantic Kernel	part-1-market-segments/06_developer_and_sdk_first.md
+mindstudio-youai	MindStudio (YouAI)	part-1-market-segments/07_no_code_visual_and_automation.md
+mistral-agents-api	Mistral Agents API	part-1-market-segments/06_developer_and_sdk_first.md
+motion	Motion	part-1-market-segments/10_ai_employees_overlay.md
+mozilla-ai-agent-platform	Mozilla.ai Agent Platform	part-1-market-segments/06_developer_and_sdk_first.md
+msh-ai-prototype-studio	MSH (AI Prototype Studio)	part-1-market-segments/09_agent_studios_human_plus.md
+multion	MultiOn	part-1-market-segments/06_developer_and_sdk_first.md
+murphbeck-technologies	Murphbeck Technologies	part-1-market-segments/09_agent_studios_human_plus.md
+n8n	n8n	part-1-market-segments/07_no_code_visual_and_automation.md
+nainovate-genx	Nainovate GenX	part-1-market-segments/07_no_code_visual_and_automation.md
+novoflow-yc	Novoflow (YC)	part-1-market-segments/10_ai_employees_overlay.md
+openai	OpenAI	part-1-market-segments/06_developer_and_sdk_first.md
+openai-agents-sdk	OpenAI Agents SDK	part-1-market-segments/06_developer_and_sdk_first.md
+oracle-ai-agent-studio-fusion-ai	Oracle AI Agent Studio (Fusion AI)	part-1-market-segments/07_no_code_visual_and_automation.md
+oracle-ai-agents-for-sales	Oracle (AI agents for sales)	part-1-market-segments/10_ai_employees_overlay.md
+outsystems-agent-workbench	OutSystems Agent Workbench	part-1-market-segments/07_no_code_visual_and_automation.md
+podium	Podium	part-1-market-segments/10_ai_employees_overlay.md
+prodapt-agentic-solutions-for-autonomous-operations	Prodapt (Agentic solutions for autonomous operations)	part-1-market-segments/09_agent_studios_human_plus.md
+pydanticai	PydanticAI	part-1-market-segments/06_developer_and_sdk_first.md
+regrello-from-salesforce	Regrello (from Salesforce)	part-1-market-segments/07_no_code_visual_and_automation.md
+relay-app	Relay.app	part-1-market-segments/07_no_code_visual_and_automation.md
+relevance-ai	Relevance AI	part-1-market-segments/07_no_code_visual_and_automation.md
+resolute-software-ai-jumpstart	Resolute Software (AI Jumpstart)	part-1-market-segments/09_agent_studios_human_plus.md
+rivet	Rivet	part-1-market-segments/07_no_code_visual_and_automation.md
+sagebrush-labs	Sagebrush Labs	part-1-market-segments/09_agent_studios_human_plus.md
+salesforce-agentforce	Salesforce Agentforce	part-1-market-segments/07_no_code_visual_and_automation.md
+sandra-ai-yc	Sandra AI (YC)	part-1-market-segments/10_ai_employees_overlay.md
+sap-joule-studio	SAP Joule Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+scrapybara	Scrapybara	part-1-market-segments/06_developer_and_sdk_first.md
+sema4-ai	Sema4.ai	part-1-market-segments/10_ai_employees_overlay.md
+serval	Serval	part-1-market-segments/10_ai_employees_overlay.md
+servicenow-ai-agent-studio	ServiceNow AI Agent Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+shipai	ShipAi	part-1-market-segments/09_agent_studios_human_plus.md
+simular-ai-agent-s	Simular AI (Agent S)	part-1-market-segments/06_developer_and_sdk_first.md
+sintra	Sintra	part-1-market-segments/10_ai_employees_overlay.md
+sirkupai	SirkupAI	part-1-market-segments/09_agent_studios_human_plus.md
+skyvern	Skyvern	part-1-market-segments/06_developer_and_sdk_first.md
+smythos-agent-studio	SmythOS Agent Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+snowflake-cortex-agents	Snowflake Cortex Agents	part-1-market-segments/06_developer_and_sdk_first.md
+sola	Sola	part-1-market-segments/07_no_code_visual_and_automation.md
+spara	Spara	part-1-market-segments/10_ai_employees_overlay.md
+stack-ai	Stack AI	part-1-market-segments/07_no_code_visual_and_automation.md
+steel-dev	Steel.dev	part-1-market-segments/06_developer_and_sdk_first.md
+tcs-mastercraft-genai-agentic-ai	TCS (MasterCraft, GenAI + Agentic AI)	part-1-market-segments/09_agent_studios_human_plus.md
+tinyfish-agentql	TinyFish / AgentQL	part-1-market-segments/06_developer_and_sdk_first.md
+tray-io-merlin-agent-builder	Tray.io Merlin Agent Builder	part-1-market-segments/07_no_code_visual_and_automation.md
+uipath-agent-builder	UiPath Agent Builder	part-1-market-segments/07_no_code_visual_and_automation.md
+vellum	Vellum	part-1-market-segments/07_no_code_visual_and_automation.md
+venta-ai	Venta AI	part-1-market-segments/10_ai_employees_overlay.md
+voiceflow	Voiceflow	part-1-market-segments/07_no_code_visual_and_automation.md
+wipro-agentic-ai-solutions	Wipro (Agentic AI solutions)	part-1-market-segments/09_agent_studios_human_plus.md
+workato-agent-studio	Workato Agent Studio	part-1-market-segments/07_no_code_visual_and_automation.md
+writer-writer-com	Writer (Writer.com)	part-1-market-segments/07_no_code_visual_and_automation.md
+zapier-agents	Zapier Agents	part-1-market-segments/07_no_code_visual_and_automation.md
+zendesk-ai-agent-builder	Zendesk AI Agent Builder	part-1-market-segments/07_no_code_visual_and_automation.md
+zoho-zia-agent-studio	Zoho Zia Agent Studio	part-1-market-segments/07_no_code_visual_and_automation.md

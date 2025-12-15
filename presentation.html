@@ -1,0 +1,1541 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agent Builder Market — Presentation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+	      :root {
+	        --bg: #fbfbfd;
+	        --fg: #0b1224;
+	        --muted: #475569;
+	        --border: #e5e7eb;
+	        --card: rgba(255, 255, 255, 0.78);
+	        --shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+	        --market-map-accent: rgba(59, 130, 246, 0.9);
+	        --market-map-accent-bg: rgba(59, 130, 246, 0.08);
+	        --market-map-accent-border: rgba(59, 130, 246, 0.25);
+	        --market-map-item-width: 104px;
+	        --market-map-item-min-height: 86px;
+	        --market-map-logo-size: 28px;
+	        --market-map-logo-radius: 10px;
+	        --market-map-name-display: -webkit-box;
+	      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(900px 500px at 20% 0%, rgba(59, 130, 246, 0.10), transparent 55%),
+          radial-gradient(900px 500px at 85% 10%, rgba(99, 102, 241, 0.10), transparent 55%),
+          var(--bg);
+        color: var(--fg);
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: Newsreader, serif;
+        letter-spacing: -0.01em;
+      }
+
+      code,
+      pre {
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+          "Courier New", monospace;
+      }
+
+      a {
+        color: #1d4ed8;
+        text-decoration: underline dotted;
+        text-underline-offset: 2px;
+      }
+      a:hover {
+        text-decoration-style: solid;
+      }
+
+      .app {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(251, 251, 253, 0.6);
+        border-bottom: 1px solid rgba(229, 231, 235, 0.7);
+      }
+
+      .topbar-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 18px 22px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .brand {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+        min-width: 0;
+      }
+
+      .brand-title {
+        font-size: 18px;
+        font-weight: 800;
+        font-family: Newsreader, serif;
+        white-space: nowrap;
+      }
+
+      .brand-subtitle {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .now {
+        min-width: 0;
+        text-align: right;
+      }
+
+      .now-section {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .now-title {
+        margin-top: 6px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #0f172a;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .stage {
+        flex: 1;
+      }
+
+      .slide {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 36px 22px 120px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid rgba(229, 231, 235, 0.75);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        padding: 34px 34px;
+      }
+
+      .md h1 {
+        font-size: 40px;
+        line-height: 1.08;
+        margin: 0 0 18px 0;
+        font-weight: 800;
+        color: #0b1224;
+      }
+      .md h2 {
+        font-size: 22px;
+        margin: 28px 0 12px 0;
+        font-weight: 800;
+        color: #0f172a;
+        border-bottom: 1px solid rgba(229, 231, 235, 0.9);
+        padding-bottom: 8px;
+      }
+      .md h3 {
+        font-size: 18px;
+        margin: 22px 0 10px 0;
+        font-weight: 800;
+        color: #0f172a;
+      }
+      .md p {
+        margin: 0 0 14px 0;
+        line-height: 1.75;
+        color: #334155;
+        font-size: 15px;
+      }
+      .md ul,
+      .md ol {
+        margin: 0 0 14px 0;
+        padding-left: 22px;
+        color: #334155;
+        line-height: 1.75;
+        font-size: 15px;
+      }
+      .md li {
+        margin-bottom: 6px;
+      }
+      .md blockquote {
+        margin: 18px 0;
+        padding: 10px 14px;
+        border-left: 4px solid rgba(59, 130, 246, 0.6);
+        background: rgba(248, 250, 252, 0.8);
+        border-radius: 10px;
+        color: #334155;
+      }
+      .md hr {
+        border: 0;
+        border-top: 1px solid rgba(229, 231, 235, 0.9);
+        margin: 26px 0;
+      }
+      .md pre {
+        background: rgba(15, 23, 42, 0.92);
+        color: #e2e8f0;
+        padding: 14px 14px;
+        border-radius: 12px;
+        overflow: auto;
+        font-size: 12.5px;
+        line-height: 1.6;
+      }
+      .md code {
+        background: rgba(15, 23, 42, 0.06);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        padding: 0.15em 0.35em;
+        border-radius: 8px;
+        font-size: 0.92em;
+      }
+      .md pre code {
+        background: transparent;
+        border: 0;
+        padding: 0;
+      }
+
+	      .table-wrap {
+	        margin: 18px 0;
+	        border: 1px solid rgba(229, 231, 235, 0.9);
+	        border-radius: 16px;
+	        overflow: auto;
+	        -webkit-overflow-scrolling: touch;
+	        background: rgba(255, 255, 255, 0.78);
+	        box-shadow: 0 12px 26px rgba(2, 6, 23, 0.05);
+	        max-height: min(520px, calc(100vh - 320px));
+	        overscroll-behavior: contain;
+	      }
+
+	      .md table {
+	        width: 100%;
+	        border-collapse: separate;
+	        border-spacing: 0;
+	        margin: 0;
+	        font-size: 13px;
+	      }
+	      .md thead th {
+	        position: sticky;
+	        top: 0;
+	        background: rgba(248, 250, 252, 0.96);
+	        backdrop-filter: blur(8px);
+	        -webkit-backdrop-filter: blur(8px);
+	        z-index: 1;
+	      }
+      .md th,
+      .md td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid rgba(229, 231, 235, 0.9);
+        vertical-align: top;
+      }
+      .md th {
+        white-space: nowrap;
+      }
+      .md td {
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+	      .md tbody tr:nth-child(even) td {
+	        background: rgba(248, 250, 252, 0.55);
+	      }
+	      .md tbody tr:hover td {
+	        background: rgba(219, 234, 254, 0.35);
+	      }
+
+	      .md table.table-dense {
+	        font-size: 12px;
+	      }
+	      .md table.table-dense th,
+	      .md table.table-dense td {
+	        padding: 8px 10px;
+	      }
+
+	      .company-cell {
+	        display: inline-flex;
+	        align-items: center;
+	        gap: 8px;
+	        max-width: 100%;
+	      }
+
+	      .company-logo {
+	        width: 22px;
+	        height: 22px;
+	        border-radius: 8px;
+	        border: 1px solid rgba(148, 163, 184, 0.6);
+	        background: rgba(255, 255, 255, 0.95);
+	        object-fit: contain;
+	        flex: 0 0 auto;
+	      }
+	      .company-logo--chip {
+	        width: 18px;
+	        height: 18px;
+	        border-radius: 7px;
+	      }
+
+	      .company-chips {
+	        display: flex;
+	        flex-wrap: wrap;
+	        gap: 8px;
+	      }
+
+	      .company-chip {
+	        display: inline-flex;
+	        align-items: center;
+	        gap: 8px;
+	        padding: 6px 10px;
+	        border-radius: 999px;
+	        border: 1px solid rgba(203, 213, 225, 0.9);
+	        background: rgba(248, 250, 252, 0.92);
+	        font-size: 12px;
+	        font-weight: 700;
+	        color: #0f172a;
+	        white-space: nowrap;
+	      }
+
+	      .market-map {
+	        margin: 18px 0 12px;
+	        border: 1px solid rgba(229, 231, 235, 0.9);
+	        border-radius: 16px;
+	        overflow: auto;
+	        -webkit-overflow-scrolling: touch;
+	        background: rgba(255, 255, 255, 0.78);
+	        box-shadow: 0 12px 26px rgba(2, 6, 23, 0.05);
+	        max-height: min(560px, calc(100vh - 320px));
+	        overscroll-behavior: contain;
+	      }
+
+	      .market-map__section {
+	        padding: 16px 16px;
+	      }
+
+	      .market-map__section + .market-map__section {
+	        border-top: 1px dashed rgba(203, 213, 225, 0.9);
+	      }
+
+	      .market-map__section-header {
+	        position: relative;
+	        display: flex;
+	        align-items: baseline;
+	        justify-content: space-between;
+	        gap: 12px;
+	        margin-bottom: 12px;
+	        padding: 10px 12px 10px 14px;
+	        border-radius: 14px;
+	        background: var(--market-map-accent-bg);
+	        border: 1px solid var(--market-map-accent-border);
+	      }
+
+	      .market-map__section-header::before {
+	        content: "";
+	        position: absolute;
+	        left: 10px;
+	        top: 10px;
+	        bottom: 10px;
+	        width: 4px;
+	        border-radius: 999px;
+	        background: var(--market-map-accent);
+	      }
+
+	      .market-map__section-title {
+	        font-size: 13px;
+	        font-weight: 850;
+	        color: #0f172a;
+	        line-height: 1.25;
+	        padding-left: 10px;
+	      }
+
+	      .market-map__section-meta {
+	        font-size: 12px;
+	        font-weight: 750;
+	        color: rgba(15, 23, 42, 0.6);
+	        white-space: nowrap;
+	      }
+
+	      .market-map__section-notes {
+	        margin: 0 0 12px;
+	        color: rgba(15, 23, 42, 0.72);
+	        font-size: 13px;
+	        line-height: 1.5;
+	      }
+
+	      .market-map__section-notes p,
+	      .market-map__section-notes ul,
+	      .market-map__section-notes ol,
+	      .market-map__section-notes blockquote {
+	        margin: 0 0 10px 0;
+	      }
+
+	      .market-map__companies {
+	        display: flex;
+	        flex-wrap: wrap;
+	        gap: 12px;
+	        align-items: flex-start;
+	      }
+
+	      .market-map__item {
+	        width: var(--market-map-item-width);
+	        min-height: var(--market-map-item-min-height);
+	        padding: 10px 8px 8px;
+	        border-radius: 14px;
+	        border: 1px solid rgba(203, 213, 225, 0.9);
+	        background: rgba(255, 255, 255, 0.92);
+	        display: inline-flex;
+	        flex-direction: column;
+	        gap: 8px;
+	        align-items: center;
+	        justify-content: flex-start;
+	        text-decoration: none;
+	        box-shadow: 0 6px 16px rgba(2, 6, 23, 0.05);
+	        transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+	      }
+	      .market-map__item:hover {
+	        transform: translateY(-1px);
+	        border-color: rgba(59, 130, 246, 0.65);
+	        box-shadow: 0 10px 20px rgba(2, 6, 23, 0.08);
+	      }
+
+	      .market-map__name {
+	        font-size: 11px;
+	        font-weight: 750;
+	        color: rgba(15, 23, 42, 0.92);
+	        line-height: 1.15;
+	        text-align: center;
+	        max-width: 96px;
+	        overflow: hidden;
+	        text-overflow: ellipsis;
+	        display: var(--market-map-name-display);
+	        -webkit-line-clamp: 2;
+	        -webkit-box-orient: vertical;
+	      }
+
+	      .company-logo--grid {
+	        width: var(--market-map-logo-size);
+	        height: var(--market-map-logo-size);
+	        border-radius: var(--market-map-logo-radius);
+	        border: 0;
+	        background: transparent;
+	      }
+
+	      details.market-map-details {
+	        margin: 0;
+	        padding: 14px 16px 16px;
+	        border-top: 1px dashed rgba(203, 213, 225, 0.9);
+	      }
+
+	      details.market-map-details > summary {
+	        display: inline-flex;
+	        align-items: center;
+	        gap: 8px;
+	        padding: 6px 10px;
+	        border-radius: 999px;
+	        border: 1px solid rgba(203, 213, 225, 0.9);
+	        background: rgba(248, 250, 252, 0.92);
+	        font-size: 12px;
+	        font-weight: 750;
+	        color: #0f172a;
+	        cursor: pointer;
+	        user-select: none;
+	      }
+
+	      .market-map__source-label {
+	        margin: 14px 0 10px;
+	        font-size: 12px;
+	        font-weight: 850;
+	        color: #0f172a;
+	      }
+
+	      details.market-map-details .table-wrap {
+	        margin: 12px 0;
+	      }
+
+	      details.market-map-details > summary:hover {
+	        background: rgba(255, 255, 255, 0.96);
+	        border-color: rgba(148, 163, 184, 0.85);
+	      }
+
+	      details.market-map-details[open] > summary {
+	        margin-bottom: 12px;
+	      }
+
+	      details.market-map-details > summary::-webkit-details-marker {
+	        display: none;
+	      }
+
+      .link-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 2px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(203, 213, 225, 0.9);
+        background: rgba(248, 250, 252, 0.9);
+        font-size: 12px;
+        font-weight: 700;
+        color: #1d4ed8;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .link-pill:hover {
+        background: rgba(255, 255, 255, 0.96);
+        border-color: rgba(148, 163, 184, 0.8);
+      }
+
+	      .md img {
+	        max-width: 100%;
+	      }
+	      .md img:not(.company-logo) {
+	        display: block;
+	        margin: 18px auto;
+	        border-radius: 18px;
+	        border: 1px solid rgba(229, 231, 235, 0.9);
+	        box-shadow: 0 18px 40px rgba(2, 6, 23, 0.10);
+	        background: rgba(255, 255, 255, 0.9);
+	      }
+
+      .controls {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid rgba(229, 231, 235, 0.8);
+        border-radius: 16px;
+        padding: 10px 12px;
+        box-shadow: 0 18px 40px rgba(2, 6, 23, 0.12);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+
+      .btn {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        border: 1px solid rgba(229, 231, 235, 0.9);
+        background: rgba(248, 250, 252, 0.9);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, opacity 120ms ease;
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 0.95);
+        border-color: rgba(203, 213, 225, 1);
+      }
+      .btn:active {
+        transform: translateY(0px);
+      }
+      .btn:disabled {
+        opacity: 0.45;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      .progress {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        min-width: 110px;
+      }
+
+      .progress-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .progress-sub {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 180px;
+      }
+
+      .bar {
+        height: 6px;
+        background: rgba(148, 163, 184, 0.25);
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      .bar > div {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, rgba(37, 99, 235, 0.95), rgba(99, 102, 241, 0.95));
+        border-radius: 999px;
+        transition: width 180ms ease;
+      }
+
+      .empty {
+        max-width: 980px;
+        margin: 40px auto;
+        padding: 0 22px;
+        color: #334155;
+      }
+
+      .boot {
+        max-width: 980px;
+        margin: 46px auto;
+        padding: 0 22px;
+        color: #334155;
+      }
+      .boot-card {
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid rgba(229, 231, 235, 0.8);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        padding: 22px 22px;
+      }
+      .boot-card h2 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        color: #0f172a;
+      }
+      .boot-card p {
+        margin: 0 0 10px 0;
+        line-height: 1.6;
+      }
+
+      .kbd {
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+          "Courier New", monospace;
+        font-size: 12px;
+        padding: 3px 8px;
+        border-radius: 10px;
+        border: 1px solid rgba(229, 231, 235, 0.9);
+        background: rgba(248, 250, 252, 0.9);
+        color: #0f172a;
+      }
+
+      @media (max-width: 640px) {
+        .card {
+          padding: 24px 20px;
+          border-radius: 14px;
+        }
+        .md h1 {
+          font-size: 34px;
+        }
+        .controls {
+          right: 12px;
+          bottom: 12px;
+        }
+        .progress-sub {
+          max-width: 130px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="boot-fallback" class="boot" style="display: none">
+      <div class="boot-card">
+        <h2>Run this deck via a local web server</h2>
+        <p>
+          If you opened this page as a local file (<span class="kbd">file://</span>), browsers will block loading
+          <span class="kbd">deck.md</span> and slide Markdown via <span class="kbd">fetch()</span>, so you’ll see a blank page.
+        </p>
+        <p>
+          From <span class="kbd">agent-builder-tools/final-presentation</span>, run
+          <span class="kbd">./serve.sh</span>.
+        </p>
+        <p>Then open the printed URL (it will look like <span class="kbd">http://localhost:8001/agent-builder-tools/final-presentation/presentation.html</span>).</p>
+      </div>
+    </div>
+    <div id="root">
+      <div class="boot">
+        <div class="boot-card">
+          <h2>Loading…</h2>
+          <p>If this stays blank, run <span class="kbd">./serve.sh</span> from <span class="kbd">agent-builder-tools/final-presentation</span>.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const root = document.getElementById("root");
+        if (!root) return;
+
+        const escapeHtml = (value) =>
+          String(value ?? "")
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+
+        const showError = (title, details) => {
+          const prettyDetails = details ? String(details) : "";
+          root.innerHTML = `
+            <div class="boot">
+              <div class="boot-card">
+                <h2>${escapeHtml(title || "Presentation error")}</h2>
+                <p>Open DevTools → Console for the full error, or copy the message below.</p>
+                <pre style="white-space: pre-wrap; word-break: break-word; margin: 12px 0 0 0; background: rgba(15,23,42,0.06); border: 1px solid rgba(15,23,42,0.08); padding: 10px 12px; border-radius: 12px; color: #0b1224; font-size: 12.5px; line-height: 1.5;">${escapeHtml(
+                  prettyDetails
+                )}</pre>
+              </div>
+            </div>
+          `;
+        };
+
+        window.__deck_show_error = showError;
+
+        window.addEventListener("error", (e) => {
+          const where = e?.filename ? `\n${e.filename}:${e.lineno || 0}:${e.colno || 0}` : "";
+          showError("Presentation failed to load", `${e?.message || e}\n${where}`);
+        });
+
+        window.addEventListener("unhandledrejection", (e) => {
+          showError("Presentation failed to load", e?.reason?.stack || e?.reason || String(e));
+        });
+      })();
+    </script>
+
+    <script>
+      (function () {
+        const fallback = document.getElementById("boot-fallback");
+        if (window.location.protocol !== "file:") {
+          fallback?.remove();
+          return;
+        }
+
+        const hosts = ["localhost", "127.0.0.1", "[::1]"];
+        const ports = [8001, 8002, 8003, 8004, 8005, 8006, 8007, 8008, 8009, 8010];
+        const prefixes = ["/agent-builder-tools/final-presentation", ""];
+
+        const candidates = [];
+        for (const port of ports) {
+          for (const host of hosts) {
+            const origin = `http://${host}:${port}`;
+            for (const prefix of prefixes) {
+              candidates.push({
+                origin,
+                probe: `${origin}${prefix}/assets/logos/_placeholder.svg?ts=${Date.now()}`,
+                target: `${origin}${prefix}/presentation.html`,
+              });
+            }
+          }
+        }
+
+        let i = 0;
+        const tryNext = () => {
+          if (i >= candidates.length) {
+            if (fallback) fallback.style.display = "block";
+            return;
+          }
+
+          const candidate = candidates[i++];
+
+          const probe = new Image();
+          probe.onload = () => window.location.replace(candidate.target);
+          probe.onerror = () => tryNext();
+          probe.src = candidate.probe;
+        };
+
+        tryNext();
+      })();
+    </script>
+
+    <script src="assets/vendor/react.production.min.js"></script>
+    <script src="assets/vendor/react-dom.production.min.js"></script>
+    <script src="assets/vendor/marked.min.js"></script>
+    <script src="assets/vendor/js-yaml.min.js"></script>
+
+    <script>
+      try {
+        if (!window.React) throw new Error("React failed to load (assets/vendor/react.production.min.js).");
+        if (!window.ReactDOM) throw new Error("ReactDOM failed to load (assets/vendor/react-dom.production.min.js).");
+        if (typeof window.ReactDOM.createRoot !== "function")
+          throw new Error("ReactDOM.createRoot is missing (React 18 required).");
+        if (!window.marked) throw new Error("Marked failed to load (assets/vendor/marked.min.js).");
+        if (!window.jsyaml) throw new Error("js-yaml failed to load (assets/vendor/js-yaml.min.js).");
+
+        const { useEffect, useRef, useState } = React;
+        const marked = window.marked;
+        const yaml = window.jsyaml;
+
+        const DECK_PATH = "./deck.md";
+
+        const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+
+        const parseFrontmatter = (raw) => {
+          const text = raw ?? "";
+          if (!text.startsWith("---")) return { data: {}, body: text };
+          const match = text.match(/^---\s*\n([\s\S]*?)\n---\s*\n?/);
+          if (!match) return { data: {}, body: text };
+          const fm = match[1];
+          const body = text.slice(match[0].length);
+          try {
+            return { data: yaml.load(fm) || {}, body };
+          } catch {
+            return { data: {}, body };
+          }
+        };
+
+      const extractTitleFromBody = (body) => {
+        const m = (body || "").match(/^#\s+(.+)$/m);
+        if (!m) return null;
+        return (m[1] || "").trim();
+      };
+
+      const normalizeDeckPath = (p) => {
+        let v = (p || "").trim();
+        if (!v) return null;
+        v = v.replace(/^(\.\/)+/, "");
+        v = v.replace(/^\//, "");
+        v = v.replace(/^agent-builder-tools\/final-presentation\//, "");
+        v = v.replace(/^final-presentation\//, "");
+        return v;
+      };
+
+      const parseDeckMarkdown = (deckMd) => {
+        const lines = (deckMd || "").split(/\r?\n/);
+        let section = null;
+        const slides = [];
+
+        const takePath = (line) => {
+          const trimmed = line.replace(/^[-*+]\s+/, "").trim();
+          const codeSpan = trimmed.match(/`([^`]+\.md)`/i);
+          if (codeSpan?.[1]) return normalizeDeckPath(codeSpan[1]);
+          const plain = trimmed.match(/([\w./-]+\.md)\b/i);
+          if (plain?.[1]) return normalizeDeckPath(plain[1]);
+          return null;
+        };
+
+        for (const line of lines) {
+          const sec = line.match(/^##\s+(.+)$/);
+          if (sec) {
+            section = (sec[1] || "").trim();
+            continue;
+          }
+
+          if (/^[-*+]\s+/.test(line)) {
+            const path = takePath(line);
+            if (!path) continue;
+            slides.push({ section: section || "Deck", path });
+          }
+        }
+
+        return slides;
+      };
+
+      const IconLeft = () =>
+        React.createElement(
+          "svg",
+          { width: 18, height: 18, viewBox: "0 0 24 24", fill: "none" },
+          React.createElement("path", {
+            d: "M15 18l-6-6 6-6",
+            stroke: "#0f172a",
+            strokeWidth: 2.2,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          })
+        );
+
+      const IconRight = () =>
+        React.createElement(
+          "svg",
+          { width: 18, height: 18, viewBox: "0 0 24 24", fill: "none" },
+          React.createElement("path", {
+            d: "M9 6l6 6-6 6",
+            stroke: "#0f172a",
+            strokeWidth: 2.2,
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+          })
+        );
+
+        const App = () => {
+          const [deck, setDeck] = useState({ slides: [], error: null, loading: true });
+          const [index, setIndex] = useState(0);
+          const [cache, setCache] = useState(() => new Map());
+          const [slide, setSlide] = useState({ loading: true, error: null, html: "", title: "", section: "" });
+          const lastNavAt = useRef(0);
+          const contentRef = useRef(null);
+
+        const slides = deck.slides;
+        const total = slides.length;
+        const current = total ? slides[clamp(index, 0, total - 1)] : null;
+
+        const navigate = (delta) => {
+          if (!total) return;
+          const now = Date.now();
+          if (now - lastNavAt.current < 120) return;
+          lastNavAt.current = now;
+          setIndex((prev) => clamp(prev + delta, 0, total - 1));
+        };
+
+        useEffect(() => {
+          const onKeyDown = (e) => {
+            if (e.key === "ArrowLeft") navigate(-1);
+            if (e.key === "ArrowRight") navigate(1);
+            if (e.key === "PageUp") navigate(-1);
+            if (e.key === "PageDown") navigate(1);
+            if (e.key === " " && !e.altKey && !e.ctrlKey && !e.metaKey) {
+              e.preventDefault();
+              navigate(1);
+            }
+          };
+          window.addEventListener("keydown", onKeyDown);
+          return () => window.removeEventListener("keydown", onKeyDown);
+        }, [total]);
+
+	        useEffect(() => {
+	          const syncFromHash = () => {
+	            const raw = (window.location.hash || "").replace(/^#/, "").trim();
+	            if (!raw) return;
+	            const n = Number.parseInt(raw, 10);
+	            if (Number.isFinite(n) && total) setIndex(clamp(n - 1, 0, total - 1));
+	          };
+	          window.addEventListener("hashchange", syncFromHash);
+	          syncFromHash();
+	          return () => window.removeEventListener("hashchange", syncFromHash);
+	        }, [total]);
+
+	        const slugify = (value) =>
+	          String(value || "")
+	            .trim()
+	            .toLowerCase()
+            .replace(/&/g, " and ")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/-+/g, "-")
+            .replace(/^-|-$/g, "");
+
+	        useEffect(() => {
+	          const root = contentRef.current;
+	          if (!root) return;
+
+          for (const a of Array.from(root.querySelectorAll("a[href]"))) {
+            a.target = "_blank";
+            a.rel = "noreferrer noopener";
+          }
+
+          const labelForUrl = (href) => {
+            try {
+              const u = new URL(href);
+              return u.hostname.replace(/^www\./, "");
+            } catch {
+              return String(href || "").replace(/^https?:\/\//i, "").split("/")[0] || String(href || "");
+            }
+          };
+
+          const normalizeLinkCell = (cell) => {
+            if (!cell) return;
+            if (cell.querySelector("a.link-pill")) return;
+
+            const existing = cell.querySelector("a[href]");
+            const text = (cell.textContent || "").trim();
+
+            const isBareUrl = /^https?:\/\/\S+$/i.test(text);
+            const href = existing?.getAttribute("href") || (isBareUrl ? text : null);
+            if (!href) return;
+
+            let a = existing;
+            if (!a) {
+              a = document.createElement("a");
+              a.href = href;
+              cell.textContent = "";
+              cell.appendChild(a);
+            }
+
+            a.classList.add("link-pill");
+            a.target = "_blank";
+            a.rel = "noreferrer noopener";
+            a.title = href;
+            a.textContent = labelForUrl(href);
+          };
+
+	          const tables = Array.from(root.querySelectorAll("table"));
+
+	          const buildLogoImg = (name, className) => {
+	            const slug = slugify(name);
+	            const candidates = [
+	              `assets/logos/${slug}.svg`,
+	              `assets/logos/${slug}.png`,
+	              `assets/logos/${slug}.jpg`,
+	              `assets/logos/${slug}.jpeg`,
+	            ];
+
+	            const img = document.createElement("img");
+	            img.className = className || "company-logo";
+	            img.alt = `${name} logo`;
+
+	            let i = 0;
+	            img.onerror = () => {
+	              i += 1;
+	              if (i >= candidates.length) {
+	                img.onerror = null;
+	                img.src = "assets/logos/_placeholder.svg";
+	                return;
+	              }
+	              img.src = candidates[i];
+	            };
+	            img.src = candidates[i];
+	            return img;
+	          };
+
+	          const wrapTable = (table) => {
+	            if (!table) return;
+	            const parent = table.parentElement;
+	            if (!parent) return;
+	            if (parent && parent.classList?.contains("table-wrap")) return;
+	            const wrap = document.createElement("div");
+	            wrap.className = "table-wrap";
+	            parent.insertBefore(wrap, table);
+	            wrap.appendChild(table);
+	          };
+
+	          const isCompanyListTable = (headers) => {
+	            if (!Array.isArray(headers) || !headers.length) return false;
+	            const hasCompany = headers.includes("company");
+	            const hasLink = headers.some((h) => h.includes("link") || h.includes("url"));
+	            return hasCompany && hasLink;
+	          };
+
+	          const isHeading = (el) => {
+	            const t = el?.tagName?.toLowerCase?.();
+	            return t === "h2" || t === "h3" || t === "h4";
+	          };
+
+	          const findSectionHeading = (startEl) => {
+	            let node = startEl;
+	            while (node && node !== root) {
+	              let prev = node.previousElementSibling;
+	              while (prev) {
+	                if (isHeading(prev)) {
+	                  const text = (prev.textContent || "").trim();
+	                  if (text) return { el: prev, text };
+	                }
+	                prev = prev.previousElementSibling;
+	              }
+	              node = node.parentElement;
+	            }
+	            return { el: null, text: "Companies" };
+	          };
+
+	          const collectSectionNotes = (headingEl, stopEl) => {
+	            if (!headingEl || !stopEl) return [];
+	            if (headingEl.parentElement !== stopEl.parentElement) return [];
+
+	            const notes = [];
+	            let node = headingEl.nextElementSibling;
+	            while (node && node !== stopEl) {
+	              const tag = node.tagName?.toLowerCase?.() || "";
+	              if (tag === "hr") {
+	                node = node.nextElementSibling;
+	                continue;
+	              }
+	              if (isHeading(node)) break;
+	              if (tag === "p" || tag === "ul" || tag === "ol" || tag === "blockquote") notes.push(node);
+	              node = node.nextElementSibling;
+	            }
+	            return notes;
+	          };
+
+	          const cloneNotesInto = (container, noteEls) => {
+	            if (!container || !noteEls?.length) return;
+	            for (const el of noteEls) container.appendChild(el.cloneNode(true));
+	            for (const a of Array.from(container.querySelectorAll("a[href]"))) {
+	              a.target = "_blank";
+	              a.rel = "noreferrer noopener";
+	            }
+	          };
+
+	          const hideRange = (startEl, endEl) => {
+	            if (!startEl || !endEl) return;
+	            if (startEl.parentElement !== endEl.parentElement) return;
+	            let node = startEl;
+	            while (node) {
+	              const next = node.nextElementSibling;
+	              node.style.display = "none";
+	              if (node === endEl) break;
+	              node = next;
+	            }
+	          };
+
+	          const hashString = (input) => {
+	            let h = 2166136261;
+	            const s = String(input || "");
+	            for (let i = 0; i < s.length; i++) {
+	              h ^= s.charCodeAt(i);
+	              h = Math.imul(h, 16777619);
+	            }
+	            return h >>> 0;
+	          };
+
+	          const marketMapPalette = [
+	            { accent: "rgba(59, 130, 246, 0.92)", bg: "rgba(59, 130, 246, 0.08)", border: "rgba(59, 130, 246, 0.22)" }, // blue
+	            { accent: "rgba(168, 85, 247, 0.92)", bg: "rgba(168, 85, 247, 0.08)", border: "rgba(168, 85, 247, 0.22)" }, // purple
+	            { accent: "rgba(34, 197, 94, 0.92)", bg: "rgba(34, 197, 94, 0.08)", border: "rgba(34, 197, 94, 0.22)" }, // green
+	            { accent: "rgba(20, 184, 166, 0.92)", bg: "rgba(20, 184, 166, 0.08)", border: "rgba(20, 184, 166, 0.22)" }, // teal
+	            { accent: "rgba(245, 158, 11, 0.92)", bg: "rgba(245, 158, 11, 0.09)", border: "rgba(245, 158, 11, 0.24)" }, // amber
+	            { accent: "rgba(236, 72, 153, 0.92)", bg: "rgba(236, 72, 153, 0.08)", border: "rgba(236, 72, 153, 0.22)" }, // pink
+	          ];
+
+	          const accentForLabel = (label) => {
+	            const raw = String(label || "").trim();
+	            const m = raw.match(/^([A-Z])\)/);
+	            if (m?.[1]) {
+	              const n = m[1].charCodeAt(0) - 65;
+	              if (Number.isFinite(n) && n >= 0) return marketMapPalette[n % marketMapPalette.length];
+	            }
+	
+	            const key = slugify(raw || "companies");
+	            const idx = hashString(key) % marketMapPalette.length;
+	            return marketMapPalette[idx];
+	          };
+
+	          const buildMarketMap = (sections) => {
+	            const map = document.createElement("div");
+	            map.className = "market-map";
+
+	            for (const section of sections) {
+	              const colors = accentForLabel(section.label || "Companies");
+	              const sectionEl = document.createElement("div");
+	              sectionEl.className = "market-map__section";
+	              sectionEl.style.setProperty("--market-map-accent", colors.accent);
+	              sectionEl.style.setProperty("--market-map-accent-bg", colors.bg);
+	              sectionEl.style.setProperty("--market-map-accent-border", colors.border);
+
+	              const header = document.createElement("div");
+	              header.className = "market-map__section-header";
+
+	              const title = document.createElement("div");
+	              title.className = "market-map__section-title";
+	              title.textContent = section.label || "Companies";
+
+	              const meta = document.createElement("div");
+	              meta.className = "market-map__section-meta";
+	              meta.textContent = `${section.entries.length} companies`;
+
+	              header.appendChild(title);
+	              header.appendChild(meta);
+
+	              sectionEl.appendChild(header);
+
+	              if (section.notes?.length) {
+	                const notes = document.createElement("div");
+	                notes.className = "market-map__section-notes";
+	                cloneNotesInto(notes, section.notes);
+	                sectionEl.appendChild(notes);
+	              }
+
+	              const companies = document.createElement("div");
+	              companies.className = "market-map__companies";
+
+	              for (const entry of section.entries) {
+	                const a = document.createElement("a");
+	                a.className = "market-map__item";
+	                a.href = entry.href;
+	                a.target = "_blank";
+	                a.rel = "noreferrer noopener";
+	                a.title = entry.name;
+	                a.setAttribute("aria-label", entry.name);
+
+	                a.appendChild(buildLogoImg(entry.name, "company-logo company-logo--grid"));
+
+	                const name = document.createElement("div");
+	                name.className = "market-map__name";
+	                name.textContent = entry.name;
+	                a.appendChild(name);
+
+	                companies.appendChild(a);
+	              }
+
+	              sectionEl.appendChild(companies);
+	              map.appendChild(sectionEl);
+	            }
+
+	            return map;
+	          };
+
+	          const buildSourcesDetails = (sections) => {
+	            const total = sections.reduce((acc, s) => acc + (s.entries?.length || 0), 0);
+	            const details = document.createElement("details");
+	            details.className = "market-map-details";
+	            const summary = document.createElement("summary");
+	            summary.textContent = `Show sources (${total})`;
+	            details.appendChild(summary);
+
+	            for (const section of sections) {
+	              const label = document.createElement("div");
+	              label.className = "market-map__source-label";
+	              label.textContent = section.label || "Companies";
+	              details.appendChild(label);
+
+	              if (section.tableWrap) {
+	                section.tableWrap.style.display = "";
+	                details.appendChild(section.tableWrap);
+	              }
+	            }
+
+	            return details;
+	          };
+
+	          const marketMapSections = [];
+
+	          for (const table of tables) {
+	            wrapTable(table);
+	            const headerCells = Array.from(table.querySelectorAll("thead th"));
+	            const headers = headerCells.map((th) => (th.textContent || "").trim().toLowerCase());
+	            const companyIdx = headers.findIndex((h) => h === "company");
+	            const linkIdxs = headers
+	              .map((h, idx) => ({ h, idx }))
+	              .filter(({ h }) => h.includes("link") || h.includes("url"))
+	              .map(({ idx }) => idx);
+	            const chipsIdxs = headers
+	              .map((h, idx) => ({ h, idx }))
+	              .filter(({ h }) => h === "companies" || h === "players" || h.includes("examples"))
+	              .map(({ idx }) => idx);
+
+	            const rows = Array.from(table.querySelectorAll("tbody tr"));
+	            if (rows.length >= 26 || headers.length >= 6) table.classList.add("table-dense");
+
+	            const entries = [];
+	            for (const tr of rows) {
+	              const cells = Array.from(tr.querySelectorAll("td"));
+	              if (companyIdx >= 0) {
+	                const cell = cells[companyIdx];
+	                if (cell && !cell.querySelector("img.company-logo")) {
+	                  const name = (cell.textContent || "").trim();
+	                  if (name) {
+	                    const wrap = document.createElement("span");
+	                    wrap.className = "company-cell";
+
+	                    const img = buildLogoImg(name, "company-logo");
+
+	                    const label = document.createElement("span");
+	                    label.textContent = name;
+
+                    wrap.appendChild(img);
+                    wrap.appendChild(label);
+
+                    cell.textContent = "";
+                    cell.appendChild(wrap);
+	                  }
+	                }
+	              }
+
+	              for (const idx of linkIdxs) normalizeLinkCell(cells[idx]);
+
+	              if (companyIdx >= 0 && linkIdxs.length) {
+	                const name = (cells[companyIdx]?.textContent || "").trim();
+	                const href = cells[linkIdxs[0]]?.querySelector("a[href]")?.getAttribute("href");
+	                if (name && href) entries.push({ name, href });
+	              }
+
+	              for (const idx of chipsIdxs) {
+	                const cell = cells[idx];
+	                if (!cell) continue;
+	                if (cell.querySelector(".company-chips")) continue;
+
+	                const text = (cell.textContent || "").trim();
+	                if (!text) continue;
+
+	                const parts = text
+	                  .split(/[\n,;•]+/g)
+	                  .map((p) => p.trim())
+	                  .filter(Boolean);
+	                if (parts.length <= 1) continue;
+
+	                const wrap = document.createElement("div");
+	                wrap.className = "company-chips";
+	                for (const p of parts) {
+	                  const chip = document.createElement("span");
+	                  chip.className = "company-chip";
+	                  chip.appendChild(buildLogoImg(p, "company-logo company-logo--chip"));
+	                  const label = document.createElement("span");
+	                  label.textContent = p;
+	                  chip.appendChild(label);
+	                  wrap.appendChild(chip);
+	                }
+
+	                cell.textContent = "";
+	                cell.appendChild(wrap);
+	              }
+
+	            }
+
+	            if (isCompanyListTable(headers) && entries.length) {
+	              const tableWrap = table.parentElement?.classList?.contains("table-wrap") ? table.parentElement : table;
+	              const heading = findSectionHeading(tableWrap);
+	              marketMapSections.push({
+	                tableWrap,
+	                headingEl: heading.el,
+	                label: heading.text,
+	                notes: collectSectionNotes(heading.el, tableWrap),
+	                entries,
+	              });
+	            }
+	          }
+
+	          if (marketMapSections.length) {
+	            const first = marketMapSections[0];
+	            const last = marketMapSections[marketMapSections.length - 1];
+	            const blockStartEl = first.headingEl || first.tableWrap;
+	            const blockEndEl = last.tableWrap;
+	            const anchorEl = blockStartEl;
+	            const parent = anchorEl?.parentElement;
+
+	            if (parent && anchorEl && !anchorEl.previousElementSibling?.classList?.contains("market-map")) {
+	              const map = buildMarketMap(marketMapSections);
+	              parent.insertBefore(map, anchorEl);
+
+	              hideRange(blockStartEl, blockEndEl);
+	              map.appendChild(buildSourcesDetails(marketMapSections));
+	            }
+	          }
+	        }, [slide.html]);
+
+        useEffect(() => {
+          const loadDeck = async () => {
+            try {
+              const res = await fetch(DECK_PATH, { cache: "no-store" });
+              if (!res.ok) throw new Error(`Failed to load deck: ${res.status}`);
+              const text = await res.text();
+              const slides = parseDeckMarkdown(text);
+              if (!slides.length) throw new Error("Deck is empty. Add slide paths to deck.md.");
+              setDeck({ slides, error: null, loading: false });
+            } catch (e) {
+              setDeck({
+                slides: [],
+                error:
+                  e?.message ||
+                  "Failed to load deck. If you opened this via file://, serve the repo (e.g. python -m http.server).",
+                loading: false,
+              });
+            }
+          };
+          loadDeck();
+        }, []);
+
+        useEffect(() => {
+          if (!total) return;
+          const nextHash = `#${clamp(index, 0, total - 1) + 1}`;
+          if (window.location.hash !== nextHash) window.history.replaceState(null, "", nextHash);
+        }, [index, total]);
+
+        const loadSlide = async (path, section) => {
+          if (!path) return;
+          if (cache.has(path)) return cache.get(path);
+
+          const res = await fetch(path, { cache: "no-store" });
+          if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
+
+          const raw = await res.text();
+          const { data, body } = parseFrontmatter(raw);
+          const title = (data?.title && String(data.title).trim()) || extractTitleFromBody(body) || path;
+
+          const html = marked.parse(body, {
+            gfm: true,
+            breaks: false,
+          });
+
+          const entry = { html, title, section };
+          setCache((prev) => {
+            const next = new Map(prev);
+            next.set(path, entry);
+            return next;
+          });
+          return entry;
+        };
+
+        useEffect(() => {
+          const run = async () => {
+            if (!current) return;
+            setSlide((s) => ({ ...s, loading: true, error: null, section: current.section }));
+            try {
+              const entry = await loadSlide(current.path, current.section);
+              setSlide({ loading: false, error: null, html: entry.html, title: entry.title, section: current.section });
+              window.scrollTo({ top: 0, behavior: "auto" });
+            } catch (e) {
+              setSlide({
+                loading: false,
+                error: e?.message || `Failed to load slide: ${current.path}`,
+                html: "",
+                title: current.path,
+                section: current.section,
+              });
+            }
+
+            const toPrefetch = [];
+            if (slides[index + 1]) toPrefetch.push(slides[index + 1]);
+            if (slides[index - 1]) toPrefetch.push(slides[index - 1]);
+            for (const s of toPrefetch) {
+              loadSlide(s.path, s.section).catch(() => undefined);
+            }
+          };
+          run();
+        }, [current?.path, current?.section, index, total]);
+
+        const progressPct = total ? ((clamp(index, 0, total - 1) + 1) / total) * 100 : 0;
+        const progressText = total ? `${clamp(index, 0, total - 1) + 1} / ${total}` : "-- / --";
+
+        const topbar = React.createElement(
+          "div",
+          { className: "topbar" },
+          React.createElement(
+            "div",
+            { className: "topbar-inner" },
+            React.createElement(
+              "div",
+              { className: "brand" },
+              React.createElement("div", { className: "brand-title" }, "Agent Builder Market"),
+              React.createElement("div", { className: "brand-subtitle" }, "Presentation")
+            ),
+            React.createElement(
+              "div",
+              { className: "now" },
+              React.createElement("div", { className: "now-section" }, slide.section || "—"),
+              React.createElement("div", { className: "now-title" }, slide.title || "")
+            )
+          )
+        );
+
+        if (deck.loading) {
+          return React.createElement(
+            "div",
+            { className: "app" },
+            topbar,
+            React.createElement(
+              "div",
+              { className: "empty" },
+              React.createElement("div", null, "Loading deck…")
+            )
+          );
+        }
+
+        if (deck.error) {
+          return React.createElement(
+            "div",
+            { className: "app" },
+            topbar,
+            React.createElement(
+              "div",
+              { className: "empty" },
+              React.createElement("h2", { style: { margin: "0 0 10px 0" } }, "Couldn’t load the presentation"),
+              React.createElement("p", null, deck.error),
+              React.createElement(
+                "p",
+                null,
+                "Tip: run ",
+                React.createElement("span", { className: "kbd" }, "./serve.sh"),
+                " from ",
+                React.createElement("span", { className: "kbd" }, "agent-builder-tools/final-presentation"),
+                " and open the printed URL.",
+                "."
+              )
+            )
+          );
+        }
+
+        const content = slide.loading
+          ? React.createElement("div", { className: "card" }, React.createElement("div", null, "Loading page…"))
+          : slide.error
+            ? React.createElement(
+                "div",
+                { className: "card" },
+                React.createElement("h2", { style: { margin: "0 0 10px 0" } }, "Couldn’t load this page"),
+                React.createElement("p", null, slide.error),
+                current?.path
+                  ? React.createElement("p", null, "Path: ", React.createElement("span", { className: "kbd" }, current.path))
+                  : null
+              )
+            : React.createElement("div", { className: "card md", ref: contentRef, dangerouslySetInnerHTML: { __html: slide.html } });
+
+        const controls = React.createElement(
+          "div",
+          { className: "controls" },
+          React.createElement(
+            "button",
+            { className: "btn", onClick: () => navigate(-1), disabled: index <= 0, title: "Previous (←)" },
+            React.createElement(IconLeft)
+          ),
+          React.createElement(
+            "button",
+            { className: "btn", onClick: () => navigate(1), disabled: index >= total - 1, title: "Next (→)" },
+            React.createElement(IconRight)
+          ),
+          React.createElement(
+            "div",
+            { className: "progress" },
+            React.createElement(
+              "div",
+              { className: "progress-top" },
+              React.createElement("div", null, progressText),
+              React.createElement("div", { className: "kbd", title: "Keyboard: ← / →" }, "← →")
+            ),
+            React.createElement("div", { className: "progress-sub", title: slide.section || "" }, slide.section || ""),
+            React.createElement("div", { className: "bar" }, React.createElement("div", { style: { width: `${progressPct}%` } }))
+          )
+        );
+
+        return React.createElement(
+          "div",
+          { className: "app" },
+          topbar,
+          React.createElement("div", { className: "stage" }, React.createElement("div", { className: "slide" }, content)),
+          controls
+        );
+        };
+
+        ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
+        document.getElementById("boot-fallback")?.remove();
+      } catch (e) {
+        const show = window.__deck_show_error;
+        if (typeof show === "function") {
+          show("Presentation failed to start", e?.stack || e?.message || String(e));
+        } else {
+          console.error(e);
+        }
+      }
+    </script>
+  </body>
+</html>

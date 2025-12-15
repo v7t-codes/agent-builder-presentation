@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-label="OSWorld verified leaderboard: mean success rate by approach type (general model, specialized model, agentic framework)">
+  <defs>
+    <linearGradient id="barGeneral" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="barSpecialized" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="barAgentic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <style>
+      .bg { fill: #050814; }
+      .panel { fill: rgba(255,255,255,0.02); stroke: rgba(255,255,255,0.10); stroke-width: 1; }
+      .title { fill: #e2e8f0; font: 700 18px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .subtitle { fill: rgba(226,232,240,0.85); font: 600 13px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .axis-label { fill: rgba(226,232,240,0.75); font: 600 12px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+      .tick { fill: rgba(226,232,240,0.70); font: 600 11px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .grid { stroke: rgba(226,232,240,0.12); stroke-width: 1; }
+      .value { fill: #e2e8f0; font: 700 12px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .xlabel { fill: rgba(226,232,240,0.78); font: 700 12px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .xsub { fill: rgba(226,232,240,0.65); font: 600 11px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .foot { fill: rgba(226,232,240,0.65); font: 500 11px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="430" rx="18" />
+  <rect class="panel" x="30" y="22" width="1140" height="380" rx="16" />
+
+  <text class="title" x="60" y="55">OSWorld (verified): success rate by approach type</text>
+  <text class="subtitle" x="60" y="78">Mean success rate across verified submissions (desktop benchmark)</text>
+
+  <text class="axis-label" x="52" y="235" transform="rotate(-90 52 235)">Success rate (%)</text>
+
+  <!-- Chart area: x=140..1120, y=110..330 (0..70%) -->
+  <g>
+    <line class="grid" x1="140" y1="330" x2="1120" y2="330" />
+    <line class="grid" x1="140" y1="299" x2="1120" y2="299" />
+    <line class="grid" x1="140" y1="267" x2="1120" y2="267" />
+    <line class="grid" x1="140" y1="236" x2="1120" y2="236" />
+    <line class="grid" x1="140" y1="204" x2="1120" y2="204" />
+    <line class="grid" x1="140" y1="173" x2="1120" y2="173" />
+    <line class="grid" x1="140" y1="141" x2="1120" y2="141" />
+    <line class="grid" x1="140" y1="110" x2="1120" y2="110" />
+
+    <text class="tick" x="130" y="334" text-anchor="end">0%</text>
+    <text class="tick" x="130" y="303" text-anchor="end">10%</text>
+    <text class="tick" x="130" y="271" text-anchor="end">20%</text>
+    <text class="tick" x="130" y="240" text-anchor="end">30%</text>
+    <text class="tick" x="130" y="208" text-anchor="end">40%</text>
+    <text class="tick" x="130" y="177" text-anchor="end">50%</text>
+    <text class="tick" x="130" y="145" text-anchor="end">60%</text>
+    <text class="tick" x="130" y="114" text-anchor="end">70%</text>
+  </g>
+
+  <!-- Bars (values: General 29.4, Specialized 31.3, Agentic 55.4; scale 0..70 over 220px) -->
+  <g>
+    <rect x="190" y="238" width="220" height="92" rx="16" fill="url(#barGeneral)" />
+    <rect x="490" y="232" width="220" height="98" rx="16" fill="url(#barSpecialized)" />
+    <rect x="790" y="156" width="220" height="174" rx="16" fill="url(#barAgentic)" />
+
+    <text class="value" x="300" y="228" text-anchor="middle">29.4%</text>
+    <text class="value" x="600" y="222" text-anchor="middle">31.3%</text>
+    <text class="value" x="900" y="146" text-anchor="middle">55.4%</text>
+
+    <text class="xlabel" x="300" y="368" text-anchor="middle">General model</text>
+    <text class="xsub" x="300" y="388" text-anchor="middle">“Vanilla” baseline</text>
+
+    <text class="xlabel" x="600" y="368" text-anchor="middle">Specialized model</text>
+    <text class="xsub" x="600" y="388" text-anchor="middle">Task-focused training</text>
+
+    <text class="xlabel" x="900" y="368" text-anchor="middle">Agentic framework</text>
+    <text class="xsub" x="900" y="388" text-anchor="middle">Scaffolding + control</text>
+  </g>
+
+  <text class="foot" x="60" y="414">
+    Source: OSWorld verified results (mean by approach type), downloaded 2025-12-15 — https://os-world.github.io/static/data/osworld_verified_results.xlsx
+  </text>
+</svg>

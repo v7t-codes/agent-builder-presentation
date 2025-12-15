@@ -1,0 +1,292 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="700"
+  viewBox="0 0 1200 700"
+  role="img"
+  aria-label="Agent kernel architecture: an LLM at the core, surrounded by scaffolding (context assembly, governance, tools/surfaces, outputs) with logging/evals/feedback for continual improvement."
+>
+  <defs>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <linearGradient id="kernelBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fbfdff" />
+    </linearGradient>
+
+    <marker
+      id="arrowEnd"
+      markerWidth="10"
+      markerHeight="10"
+      viewBox="0 0 10 10"
+      refX="9"
+      refY="5"
+      orient="auto"
+      markerUnits="userSpaceOnUse"
+    >
+      <path
+        d="M1.5 2 L8.5 5 L1.5 8"
+        fill="none"
+        stroke="rgba(15,23,42,0.50)"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </marker>
+    <marker
+      id="arrowStart"
+      markerWidth="10"
+      markerHeight="10"
+      viewBox="0 0 10 10"
+      refX="1"
+      refY="5"
+      orient="auto"
+      markerUnits="userSpaceOnUse"
+    >
+      <path
+        d="M8.5 2 L1.5 5 L8.5 8"
+        fill="none"
+        stroke="rgba(15,23,42,0.50)"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </marker>
+    <marker
+      id="arrowEndSoft"
+      markerWidth="10"
+      markerHeight="10"
+      viewBox="0 0 10 10"
+      refX="9"
+      refY="5"
+      orient="auto"
+      markerUnits="userSpaceOnUse"
+    >
+      <path
+        d="M1.5 2 L8.5 5 L1.5 8"
+        fill="none"
+        stroke="rgba(15,23,42,0.28)"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </marker>
+    <marker
+      id="arrowStartSoft"
+      markerWidth="10"
+      markerHeight="10"
+      viewBox="0 0 10 10"
+      refX="1"
+      refY="5"
+      orient="auto"
+      markerUnits="userSpaceOnUse"
+    >
+      <path
+        d="M8.5 2 L1.5 5 L8.5 8"
+        fill="none"
+        stroke="rgba(15,23,42,0.28)"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </marker>
+
+    <style>
+      .bg {
+        fill: #ffffff;
+      }
+      .outer {
+        fill: url(#panelBg);
+        stroke: rgba(148, 163, 184, 0.45);
+        stroke-width: 1;
+      }
+      .kernel {
+        fill: url(#kernelBg);
+        stroke: rgba(59, 130, 246, 0.85);
+        stroke-width: 2;
+      }
+
+      .box {
+        stroke-width: 1;
+      }
+      .box-user {
+        fill: rgba(255, 237, 213, 0.92);
+        stroke: rgba(251, 146, 60, 0.55);
+      }
+      .box-context {
+        fill: rgba(224, 242, 254, 0.92);
+        stroke: rgba(56, 189, 248, 0.55);
+      }
+      .box-governance {
+        fill: rgba(237, 233, 254, 0.92);
+        stroke: rgba(167, 139, 250, 0.55);
+      }
+      .box-tools {
+        fill: rgba(220, 252, 231, 0.92);
+        stroke: rgba(34, 197, 94, 0.45);
+      }
+      .box-outputs {
+        fill: rgba(224, 231, 255, 0.92);
+        stroke: rgba(99, 102, 241, 0.55);
+      }
+      .box-observ {
+        fill: rgba(241, 245, 249, 0.94);
+        stroke: rgba(148, 163, 184, 0.65);
+      }
+
+      .box-sub {
+        fill: rgba(255, 255, 255, 0.92);
+        stroke: rgba(148, 163, 184, 0.6);
+      }
+      .box-core {
+        fill: rgba(254, 249, 195, 0.96);
+        stroke: rgba(245, 158, 11, 0.65);
+      }
+
+      .tag {
+        stroke-width: 1;
+      }
+      .tag-scaffolding {
+        fill: rgba(226, 232, 240, 0.9);
+        stroke: rgba(148, 163, 184, 0.7);
+      }
+      .tag-kernel {
+        fill: rgba(219, 234, 254, 0.95);
+        stroke: rgba(147, 197, 253, 0.95);
+      }
+
+      .label {
+        fill: #0f172a;
+        font: 750 13px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      }
+      .label-soft {
+        fill: rgba(15, 23, 42, 0.76);
+        font: 650 12px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      }
+      .note {
+        fill: rgba(15, 23, 42, 0.66);
+        font: 540 13.5px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      .arrow {
+        stroke: rgba(15, 23, 42, 0.5);
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowEnd);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .arrow-soft {
+        stroke: rgba(15, 23, 42, 0.28);
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowEndSoft);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .arrow-bidir {
+        stroke: rgba(15, 23, 42, 0.5);
+        stroke-width: 2;
+        fill: none;
+        marker-start: url(#arrowStart);
+        marker-end: url(#arrowEnd);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .arrow-bidir-soft {
+        stroke: rgba(15, 23, 42, 0.28);
+        stroke-width: 2;
+        fill: none;
+        marker-start: url(#arrowStartSoft);
+        marker-end: url(#arrowEndSoft);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .dash {
+        stroke-dasharray: 5 7;
+      }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="700" rx="20" />
+
+  <!-- Scaffolding container -->
+  <rect class="outer" x="50" y="60" width="1100" height="590" rx="18" />
+  <rect class="tag tag-scaffolding" x="450" y="78" width="300" height="34" rx="10" />
+  <text class="label" x="600" y="100" text-anchor="middle">Scaffolding (variable layer)</text>
+
+  <!-- Left: user + human loop (combined) -->
+  <rect class="box box-user" x="90" y="120" width="290" height="110" rx="12" />
+  <text class="label" x="235" y="150" text-anchor="middle">User + human loop</text>
+  <text class="note" x="235" y="174" text-anchor="middle">goals • approvals • exceptions</text>
+  <text class="note" x="235" y="196" text-anchor="middle">instructions • SLAs • review</text>
+
+  <rect class="box box-context" x="90" y="250" width="290" height="120" rx="12" />
+  <text class="label" x="235" y="280" text-anchor="middle">Context assembly</text>
+  <text class="note" x="235" y="304" text-anchor="middle">retrieval • memory</text>
+  <text class="note" x="235" y="326" text-anchor="middle">tool + policy context</text>
+
+  <!-- Top: governance -->
+  <rect class="box box-governance" x="420" y="120" width="360" height="70" rx="12" />
+  <text class="label" x="600" y="150" text-anchor="middle">Governance</text>
+  <text class="note" x="600" y="174" text-anchor="middle">permissions • approvals • audit</text>
+
+  <!-- Agent kernel -->
+  <rect class="kernel" x="420" y="210" width="360" height="300" rx="16" />
+  <rect class="tag tag-kernel" x="435" y="220" width="330" height="32" rx="10" />
+  <text class="label" x="600" y="242" text-anchor="middle">Agent kernel (invariant)</text>
+
+  <!-- Kernel internals (LLM as the core component) -->
+  <rect class="box box-core" x="450" y="260" width="300" height="80" rx="12" />
+  <text class="label" x="600" y="290" text-anchor="middle">LLM (core)</text>
+  <text class="note" x="600" y="314" text-anchor="middle">planning + action selection</text>
+
+  <rect class="box box-sub" x="450" y="350" width="145" height="70" rx="12" />
+  <text class="label" x="522.5" y="380" text-anchor="middle">Controller loop</text>
+  <text class="note" x="522.5" y="404" text-anchor="middle">plan → act → update</text>
+
+  <rect class="box box-sub" x="605" y="350" width="145" height="70" rx="12" />
+  <text class="label" x="677.5" y="380" text-anchor="middle">Tool executor</text>
+  <text class="note" x="677.5" y="404" text-anchor="middle">calls • retries • stop</text>
+
+  <rect class="box box-sub" x="450" y="430" width="300" height="70" rx="12" />
+  <text class="label" x="600" y="460" text-anchor="middle">State</text>
+  <text class="note" x="600" y="484" text-anchor="middle">scratch • memory • checkpoints</text>
+
+  <!-- Right: tools + outputs -->
+  <rect class="box box-tools" x="820" y="230" width="290" height="130" rx="12" />
+  <text class="label" x="965" y="260" text-anchor="middle">Tools / surfaces</text>
+  <text class="note" x="965" y="284" text-anchor="middle">APIs • SaaS • browser • desktop</text>
+  <text class="note" x="965" y="306" text-anchor="middle">sessions • auth • sandboxes</text>
+
+  <rect class="box box-outputs" x="820" y="380" width="290" height="80" rx="12" />
+  <text class="label" x="965" y="410" text-anchor="middle">Outputs</text>
+  <text class="note" x="965" y="434" text-anchor="middle">messages • tickets • actions</text>
+
+  <!-- Bottom: logging/evals/feedback -->
+  <rect class="box box-observ" x="420" y="530" width="360" height="100" rx="12" />
+  <text class="label" x="600" y="560" text-anchor="middle">Logging + evals + feedback</text>
+  <text class="note" x="600" y="584" text-anchor="middle">traces • eval harness • regression gates</text>
+  <text class="note" x="600" y="606" text-anchor="middle">data creation → tuning (finetune/RL)</text>
+
+  <!-- Arrows (de-overlapped) -->
+  <path class="arrow" d="M235 230 L235 250" />
+  <path class="arrow" d="M380 310 L420 310" />
+
+  <!-- Kernel ↔ tools: actions ↔ observations -->
+  <path class="arrow-bidir" d="M780 300 L820 300" />
+
+  <!-- Tools → outputs -->
+  <path class="arrow" d="M965 360 L965 380" />
+
+  <!-- Outputs implicitly return to the user/human loop (no big return arrow). -->
+
+  <!-- Governance attachment -->
+  <path class="arrow-soft dash" d="M600 190 L600 210" />
+
+  <!-- Kernel ↔ logging/evals/feedback (two clean lanes to avoid crowding) -->
+  <path class="arrow-soft dash" d="M594 510 L594 530" />
+  <path class="arrow-soft dash" d="M606 530 L606 510" />
+</svg>

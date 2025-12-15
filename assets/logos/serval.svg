@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Serval logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="hsl(80 72% 62%)" />
+      <stop offset="100%" stop-color="hsl(101 72% 43%)" />
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#g)" />
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" />
+  <text x="64" y="74" text-anchor="middle"
+        font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+        font-size="54" font-weight="800"
+        letter-spacing="0.04em"
+        fill="rgba(255,255,255,0.94)">SE</text>
+</svg>
