@@ -7,24 +7,26 @@ status: "Draft"
 
 An “agent” is not just a model call. It’s an **agent kernel** wrapped in scaffolding that makes it safe and reliable in the real world.
 
-## The agent kernel (invariant)
+> **LLM‑OS frame:** in a world of “LLM‑OS,” **agents are the new apps** — the “app” is a goal-driven loop plus the scaffolding around it.
 
-- Control loop: goal → plan → act → update state → repeat
-- Action selection: an LLM (or policy) chooses the next step/tool call
-- Execution: tool runner, retries, and termination logic
-- State: scratchpad + checkpoints (so work can resume after failure)
-- Learning loop: logs → evals → labeled data → updates (prompts/policies/finetune)
+## The agent kernel — invariant
 
-## The scaffolding (variable, where products differentiate)
+- The control loop runs goal → plan → act → update state → repeat.
+- An LLM or other policy chooses the next step and tool call.
+- A tool executor runs calls, retries failures, and decides when to stop.
+- State includes a scratchpad and checkpoints so work can resume after failure.
+- A learning loop turns logs into evals, labeled data, and updates: prompts, policies, and fine‑tuning.
 
-- Context assembly (retrieval + memory + tool/policy context)
-- Tool adapters + connectors into real systems
-- Permissions, approvals, and audit (governance)
-- Observability + eval gates (debuggability + regression control)
-- Environment control (browser/desktop sessions, replays, long‑lived auth)
+## The scaffolding — where products differentiate
+
+- Context assembly pulls retrieval, memory, and tool/policy context into the run.
+- Tool adapters and connectors translate intent into safe actions in real systems.
+- Governance enforces permissions, approvals, and auditability.
+- Observability and eval gates make failures debuggable and prevent regressions.
+- Environment control manages browser/desktop sessions, replays, and long‑lived authentication.
 
 **Market thesis:** most “agent builders” are selling a different slice of this scaffolding.
 
 ## Diagram: kernel + scaffolding
 
-![](assets/diagrams/agent_kernel_scaffolding.png)
+![](assets/diagrams/agent_kernel_scaffolding.svg)

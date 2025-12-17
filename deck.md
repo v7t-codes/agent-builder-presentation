@@ -18,6 +18,7 @@ This file controls the presentation order. The React presentation reads this fil
 - `part-1-market-segments/09_agent_studios_human_plus.md`
 - `part-1-market-segments/10_ai_employees_overlay.md`
 
-## Part 2 — Summary (page 11)
+## Part 2 — Summary (pages 11–12)
 
 - `part-2-summary/11_projection_frame.md`
+- `part-2-summary/12_funding_and_traction_appendix.md`

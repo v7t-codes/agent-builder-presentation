@@ -2,8 +2,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd -- "${SCRIPT_DIR}/../.." && pwd)"
-DECK_PATH="/agent-builder-tools/final-presentation/presentation.html"
+REPO_ROOT="${SCRIPT_DIR}"
+DECK_PATH="/presentation.html"
 
 PREFERRED_PORT="8001"
 NO_OPEN="0"
@@ -72,7 +72,7 @@ fi
 
 URL="http://localhost:${PORT}${DECK_PATH}"
 
-echo "Serving repo root from: ${REPO_ROOT}"
+echo "Serving from: ${REPO_ROOT}"
 echo "Deck URL: ${URL}"
 echo
 echo "Press Ctrl+C to stop."

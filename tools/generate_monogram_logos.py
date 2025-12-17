@@ -72,7 +72,6 @@ def normalize_deck_path(p: str) -> str | None:
         return None
     v = re.sub(r"^(\./)+", "", v)
     v = re.sub(r"^/+", "", v)
-    v = re.sub(r"^agent-builder-tools/final-presentation/", "", v)
     v = re.sub(r"^final-presentation/", "", v)
     return v or None
 

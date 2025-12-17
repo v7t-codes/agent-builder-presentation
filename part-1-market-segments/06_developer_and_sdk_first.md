@@ -1,34 +1,34 @@
 ---
 title: "Company Type 1: Developer & SDK-first"
-status: "Active research (v3)"
+status: "Active research — v3"
 ---
 
 # Company type 1: Developer & SDK-first platforms, frameworks, and infrastructure
 
-## Segment definition (who they serve)
+## Segment definition
 
-- Developer teams building agentic products in production
-- Platform teams that need predictable primitives (not “magic”)
+- They serve developer teams building agentic products for production environments.
+- They serve platform teams that need predictable primitives, not opaque “magic.”
 
 ## What they build
 
-- Agent runtimes and managed services (“Agent OS” platforms)
-- Framework SDKs for orchestration, state, memory, and tool use
-- Computer‑use environments (browser/desktop sessions + reliability tooling)
+- They build agent runtimes and managed services: “Agent OS” platforms.
+- They build framework SDKs for orchestration, state, memory, and tool use.
+- They build computer‑use environments: browser/desktop sessions plus reliability tooling.
 
-## Scope (this page)
+## Scope
 
 This page is intentionally scoped to three developer-first sub‑segments:
 
-1) **Foundation + cloud “Agent OS” providers** (agent runtimes / managed services shipped by model providers, clouds, and major platforms)  
-2) **Agent framework SDKs** (pro‑code frameworks for building/orchestrating agents)  
-3) **Computer‑use / browser & desktop SDKs** (environment tooling that lets agents act on UIs)
+1) **Foundation + cloud “Agent OS” providers** — agent runtimes / managed services shipped by model providers, clouds, and major platforms  
+2) **Agent framework SDKs** — pro‑code frameworks for building/orchestrating agents  
+3) **Computer‑use / browser & desktop SDKs** — environment tooling that lets agents act on UIs
 
-**Validated companies:** 39 (only included after checking the primary link)
+**Validated companies:** 39 — only included after checking the primary link
 
 ---
 
-## A) Foundation + cloud “Agent OS” providers
+## A) Foundation + cloud "Agent OS" providers
 
 | Company | Tags | Primary link |
 |---|---|---|
@@ -38,10 +38,11 @@ This page is intentionally scoped to three developer-first sub‑segments:
 | AWS Amazon Bedrock AgentCore | cloud, managed agent runtime | https://aws.amazon.com/bedrock/agentcore/ |
 | IBM watsonx Orchestrate | enterprise, agent builder | https://www.ibm.com/products/watsonx-orchestrate/ai-agent-builder |
 | Databricks Agent Bricks | data platform, managed agent systems | https://docs.databricks.com/aws/en/generative-ai/agent-bricks/ |
-| Mozilla.ai Agent Platform | agent platform, enterprise automation | https://www.mozilla.ai/product/agent-platform |
+| Microsoft Semantic Kernel | framework, open-source | https://github.com/microsoft/semantic-kernel |
+| Microsoft AutoGen | multi-agent framework, open-source | https://github.com/microsoft/autogen |
 | Snowflake Cortex Agents | data platform, agentic workflow API | https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents |
 | Mistral Agents API | foundation, agents API | https://docs.mistral.ai/agents/introduction |
-| Cohere (Tool use & agents) | foundation, tool use, agentic apps | https://docs.cohere.com/docs/building-an-agent-with-cohere |
+| Cohere — tool use & agents | foundation, tool use, agentic apps | https://docs.cohere.com/docs/building-an-agent-with-cohere |
 
 ---
 
@@ -52,8 +53,7 @@ This page is intentionally scoped to three developer-first sub‑segments:
 | OpenAI Agents SDK | sdk, lightweight primitives | https://openai.github.io/openai-agents-python/ |
 | LangChain | framework, open-source | https://github.com/langchain-ai/langchain |
 | LangGraph | orchestration, stateful agents, deployment | https://github.com/langchain-ai/langgraph |
-| Microsoft Semantic Kernel | framework, open-source | https://github.com/microsoft/semantic-kernel |
-| Microsoft AutoGen | multi-agent framework, open-source | https://github.com/microsoft/autogen |
+| Mozilla.ai Agent Platform | agent platform, enterprise automation | https://www.mozilla.ai/product/agent-platform |
 | CrewAI | multi-agent framework | https://github.com/crewAIInc/crewAI |
 | LlamaIndex | framework, retrieval + agents | https://github.com/run-llama/llama_index |
 | Haystack | framework, pipelines + agents | https://github.com/deepset-ai/haystack |
@@ -64,7 +64,7 @@ This page is intentionally scoped to three developer-first sub‑segments:
 | Letta | stateful agents, memory | https://www.letta.com/ |
 | Agno | multi-agent framework + runtime | https://github.com/agno-agi/agno |
 | BeeAI Framework | framework, multi-agent systems | https://github.com/i-am-bee/beeai-framework |
-| Cerebrum (AIOS SDK) | open-source, agent OS research | https://github.com/agiresearch/AIOS |
+| Cerebrum — AIOS SDK | open-source, agent OS research | https://github.com/agiresearch/AIOS |
 | AutoAgent | open-source, agent framework | https://github.com/HKUDS/AutoAgent |
 
 ---
@@ -84,66 +84,31 @@ This page is intentionally scoped to three developer-first sub‑segments:
 | Browser Use | open-source browser agent library | https://github.com/browser-use/browser-use |
 | Magnitude | vision-first browser agent framework | https://docs.magnitude.run/getting-started/introduction |
 | MultiOn | web action API | https://docs.multion.ai/welcome |
-| Simular AI (Agent S) | computer-use agent framework | https://github.com/simular-ai/Agent-S |
+| Simular AI — Agent S | computer-use agent framework | https://github.com/simular-ai/Agent-S |
+| Anon.com | browser automation, secure web integrations | https://www.anon.com/ |
 
 ---
 
-## Segment hypotheses (investable theses)
+## Segment hypotheses
 
-### Hypothesis 1 — Production trust compounds: layered primitives with an ops path win
+### Hypothesis 1 — **Production trust** compounds: layered primitives with an **ops path** win
 
-**Claim:** In dev-first agent building, the durable winners combine two things:
+Developer-first winners pair **predictable primitives** with a **production ops path**: deployment, traces, eval gates, and feedback loops. Once teams hit **real traffic + on‑call**, “framework-only” stacks get swapped out.
 
-1) **Developer trust** (predictable primitives, visible failure modes, minimal “magic”), and  
-2) **A real path to production** (deployment shape, traces/logs, eval gates, and operational feedback loops).
+- **Companies:** `LangChain` `Mastra` `Letta` `OpenAI Agents SDK`
+- **Falsifiable test:** What % of teams keep the same framework after their first production incidents?
 
-Frameworks that are either (a) “local-only orchestration” or (b) “opaque abstraction” get swapped out once teams hit real traffic and on‑call reality.
+### Hypothesis 2 — **Computer‑use environment control** is a durable wedge
 
-**Companies that fit the pattern (examples):**
+For agents acting in messy browsers/desktops, the moat is **execution environment control**: sessions, replays, long‑lived auth, retries, and audit. This turns “agent reliability” into **infrastructure**.
 
-- **OpenAI Agents SDK** — explicitly “lightweight” primitives for agent building: https://github.com/openai/openai-agents-python
-- **LangGraph** — low-level, stateful orchestration with durable execution + deployment tooling via LangSmith: https://github.com/langchain-ai/langgraph
-- **Mastra** — explicit “prototype → production” framing with built-in evals + observability: https://github.com/mastra-ai/mastra
-- **Letta** — stateful agents with persistent memory (database-backed state): https://docs.letta.com/stateful-agents/
-- **Cloud “Agent OS” platforms** (pressure + distribution) — production deployment/ops bundled at the platform layer: https://cloud.google.com/products/agent-builder ; https://aws.amazon.com/bedrock/agentcore/
+- **Companies:** `Browserbase Stagehand` `Cyberdesk` `Browser Use`
+- **Falsifiable test:** In production, specialized “computer‑use infra” does *not* reduce incident rate, MTTR, or operator load vs generic stacks.
 
-**Counter-pressure:** If platform-native agent operations become standardized and effortless, independent frameworks must win on workflow fit, portability, and trust — or they become thin wrappers.
+### Hypothesis 3 — **Context optimization** compounds; value capture depends on **feedback artifacts**
 
-**Falsifiable test:** Track production retention: what % of teams keep the same framework after (a) real traffic and (b) their first on‑call incidents.
+The compounding advantage is owning the **context layer**: memory, retrieval, prompt/program optimization, plus the **feedback loop**: logs → evals/grades → updates. Durable leverage depends on who owns **telemetry, labels, and tuned artifacts**.
 
-**Weight now:** High
-
-### Hypothesis 2 — Computer‑use environment control is a durable wedge
-
-**Claim:** For agents acting in messy browsers/desktops, value concentrates in owning the execution environment: sessions, replays, logs, retries, long‑lived authenticated runs, and audit-friendly behavior. This turns “agent reliability” from a model problem into an infrastructure problem.
-
-**Evidence (examples):**
-
-- Browserbase Stagehand focuses on reliable browser automation (natural language + code): https://docs.stagehand.dev/
-- Cyberdesk is explicit about virtual desktops for agents (SDK-triggered runs; legacy workflows): https://docs.cyberdesk.io/
-
-**Companies to watch (examples):** Browserbase Stagehand, Cyberdesk, Steel.dev, Scrapybara, Anchor Browser, Induced AI, Skyvern (primary links in the tables above).
-
-**Counter-pressure:** Model providers may commoditize parts of computer‑use (vision, navigation, tool calling). The moat shifts to reliability under audit and failure-mode management.
-
-**Falsifiable test:** In production deployments, compare incident rate, MTTR, and operator load between generic automation stacks and specialized “computer‑use infra.”
-
-**Weight now:** High
-
-### Hypothesis 3 — Closed-loop optimization compounds; value capture depends on who owns feedback artifacts
-
-**Claim:** The compounding advantage is not “we have an agent,” it’s “we have a feedback loop that improves it” (evaluation, grading, and training workflows). Durable value depends on who owns the logs, labels, and tuned artifacts.
-
-**Evidence (examples):**
-
-- OpenAI Cookbook: reinforcement fine-tuning workflows for grader‑driven improvement: https://github.com/openai/openai-cookbook/blob/main/examples/Reinforcement_Fine_Tuning.ipynb
-- OpenAI Cookbook: improving tool reliability via fine‑tuning for function calling: https://github.com/openai/openai-cookbook/blob/main/examples/Fine_tuning_for_function_calling.ipynb
-- Mastra positions “built-in evals + observability” as the ongoing refinement loop: https://github.com/mastra-ai/mastra
-
-**Companies to watch (examples):** OpenAI, Mastra, LangGraph/LangSmith, Databricks (Agent Bricks), Snowflake (Cortex Agents), and cloud platforms that own the logging and deployment surface (primary links above).
-
-**Counter-pressure:** If customers demand full portability of tuned artifacts and logs, “closed loop” becomes a features race rather than a moat.
-
-**Falsifiable test:** Track procurement terms over time: do customers increasingly require portability of tuned artifacts and operational telemetry?
-
-**Weight now:** High as a technical dynamic; medium as a durable moat
+- **Companies:** `OpenAI` `Agno` `Letta` `DSPy`
+- **Note:** `Letta` and `DSPy` are focused on **context optimization**.
+- **Falsifiable test:** Customers routinely demand portability of tuned artifacts + telemetry, and closed-loop ownership stops correlating with durability.

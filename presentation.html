@@ -327,17 +327,68 @@
 	        white-space: nowrap;
 	      }
 
-	      .market-map {
-	        margin: 18px 0 12px;
-	        border: 1px solid rgba(229, 231, 235, 0.9);
-	        border-radius: 16px;
-	        overflow: auto;
-	        -webkit-overflow-scrolling: touch;
-	        background: rgba(255, 255, 255, 0.78);
-	        box-shadow: 0 12px 26px rgba(2, 6, 23, 0.05);
-	        max-height: min(560px, calc(100vh - 320px));
-	        overscroll-behavior: contain;
-	      }
+      /* Hypothesis cards */
+      .hypothesis-section {
+        margin: 22px 0 18px;
+        padding: 16px 16px 18px;
+        border-radius: 18px;
+        border: 1px solid rgba(59, 130, 246, 0.22);
+        background: rgba(59, 130, 246, 0.06);
+      }
+
+      .hypothesis-section > h2 {
+        margin-top: 0;
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .hypothesis-section__intro {
+        margin: 6px 0 14px;
+        color: rgba(15, 23, 42, 0.72);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .hypothesis-section hr {
+        display: none;
+      }
+
+      .hypothesis-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .hypothesis-grid .hypothesis-card {
+        margin: 0;
+      }
+
+      @media (max-width: 720px) {
+        .hypothesis-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .hypothesis-card code {
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: rgba(59, 130, 246, 0.10);
+        border: 1px solid rgba(59, 130, 246, 0.22);
+        color: rgba(15, 23, 42, 0.92);
+        padding: 0.15em 0.55em;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+
+      .market-map {
+        margin: 18px 0 12px;
+        border: 1px solid rgba(229, 231, 235, 0.9);
+        border-radius: 16px;
+        overflow: visible;
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 0 12px 26px rgba(2, 6, 23, 0.05);
+      }
 
 	      .market-map__section {
 	        padding: 16px 16px;
@@ -443,12 +494,74 @@
 	        -webkit-box-orient: vertical;
 	      }
 
+	      .market-map__financial {
+	        font-size: 9px;
+	        font-weight: 600;
+	        color: rgba(59, 130, 246, 0.85);
+	        text-align: center;
+	        line-height: 1.2;
+	        margin-top: 2px;
+	        padding: 2px 4px;
+	        border-radius: 4px;
+	        background: rgba(59, 130, 246, 0.06);
+	      }
+
 	      .company-logo--grid {
 	        width: var(--market-map-logo-size);
 	        height: var(--market-map-logo-size);
 	        border-radius: var(--market-map-logo-radius);
 	        border: 0;
 	        background: transparent;
+	      }
+
+	      /* Financial data tooltip */
+	      .financial-tooltip {
+	        position: absolute;
+	        z-index: 10000;
+	        background: rgba(15, 23, 42, 0.98);
+	        color: #f8fafc;
+	        padding: 12px 16px;
+	        border-radius: 10px;
+	        font-size: 12px;
+	        line-height: 1.6;
+	        max-width: 280px;
+	        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+	        pointer-events: none;
+	        opacity: 0;
+	        transition: opacity 150ms ease;
+	        border: 1px solid rgba(255, 255, 255, 0.1);
+	      }
+	      .financial-tooltip.visible {
+	        opacity: 1;
+	      }
+	      .financial-tooltip__title {
+	        font-weight: 700;
+	        font-size: 13px;
+	        margin-bottom: 8px;
+	        color: #fff;
+	        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	        padding-bottom: 6px;
+	      }
+	      .financial-tooltip__item {
+	        margin: 6px 0;
+	        display: flex;
+	        align-items: flex-start;
+	        gap: 8px;
+	      }
+	      .financial-tooltip__label {
+	        font-weight: 600;
+	        color: rgba(248, 250, 252, 0.85);
+	        min-width: 80px;
+	        flex-shrink: 0;
+	      }
+	      .financial-tooltip__value {
+	        color: #f8fafc;
+	        flex: 1;
+	      }
+	      .financial-tooltip__empty {
+	        color: rgba(248, 250, 252, 0.6);
+	        font-style: italic;
+	        font-size: 11px;
 	      }
 
 	      details.market-map-details {
@@ -473,10 +586,50 @@
 	      }
 
 	      .market-map__source-label {
-	        margin: 14px 0 10px;
+	        display: none;
+	      }
+
+	      .market-map__source-group {
+	        margin: 14px 0 18px;
+	      }
+
+	      .market-map__source-header {
+	        position: relative;
+	        display: flex;
+	        align-items: baseline;
+	        justify-content: space-between;
+	        gap: 12px;
+	        margin-bottom: 10px;
+	        padding: 9px 12px 9px 14px;
+	        border-radius: 14px;
+	        background: var(--market-map-accent-bg);
+	        border: 1px solid var(--market-map-accent-border);
+	      }
+
+	      .market-map__source-header::before {
+	        content: "";
+	        position: absolute;
+	        left: 10px;
+	        top: 9px;
+	        bottom: 9px;
+	        width: 4px;
+	        border-radius: 999px;
+	        background: var(--market-map-accent);
+	      }
+
+	      .market-map__source-title {
 	        font-size: 12px;
 	        font-weight: 850;
 	        color: #0f172a;
+	        line-height: 1.25;
+	        padding-left: 10px;
+	      }
+
+	      .market-map__source-meta {
+	        font-size: 12px;
+	        font-weight: 750;
+	        color: rgba(15, 23, 42, 0.6);
+	        white-space: nowrap;
 	      }
 
 	      details.market-map-details .table-wrap {
@@ -494,6 +647,101 @@
 
 	      details.market-map-details > summary::-webkit-details-marker {
 	        display: none;
+	      }
+
+	      .hypothesis-card {
+	        margin: 14px 0;
+	        padding: 16px 16px;
+	        border-radius: 16px;
+	        border: 1px solid rgba(203, 213, 225, 0.9);
+	        background: rgba(255, 255, 255, 0.86);
+	        box-shadow: 0 12px 26px rgba(2, 6, 23, 0.06);
+	      }
+
+	      .hypothesis-card__header {
+	        position: relative;
+	        padding: 10px 12px 10px 14px;
+	        margin: -4px -4px 12px -4px;
+	        border-radius: 14px;
+	        border: 1px solid rgba(148, 163, 184, 0.22);
+	        background: rgba(59, 130, 246, 0.06);
+	      }
+
+	      .hypothesis-card__header::before {
+	        content: "";
+	        position: absolute;
+	        left: 10px;
+	        top: 10px;
+	        bottom: 10px;
+	        width: 4px;
+	        border-radius: 999px;
+	        background: rgba(59, 130, 246, 0.9);
+	      }
+
+	      .hypothesis-card__header h3 {
+	        margin: 0;
+	        padding-left: 10px;
+	        font-size: 16px;
+	        font-weight: 900;
+	        color: #0f172a;
+	      }
+
+	      .hypothesis-card__header h3 strong {
+	        color: rgba(59, 130, 246, 0.95);
+	      }
+
+	      .hypothesis-card__companies {
+	        display: flex;
+	        flex-wrap: wrap;
+	        align-items: center;
+	        gap: 8px;
+	        margin: 0 0 12px 0;
+	        padding: 8px 10px;
+	        border-radius: 12px;
+	        border: 1px solid rgba(203, 213, 225, 0.9);
+	        background: rgba(248, 250, 252, 0.92);
+	      }
+
+	      .hypothesis-card__companies-label {
+	        font-size: 11px;
+	        font-weight: 850;
+	        letter-spacing: 0.12em;
+	        text-transform: uppercase;
+	        color: rgba(15, 23, 42, 0.6);
+	      }
+
+	      .hypothesis-card__companies-chips {
+	        display: flex;
+	        flex-wrap: wrap;
+	        gap: 8px;
+	        align-items: center;
+	      }
+
+	      .hypothesis-card__body {
+	        color: #334155;
+	      }
+
+	      .hypothesis-card__body p {
+	        margin: 0 0 10px 0;
+	        font-size: 14px;
+	        line-height: 1.7;
+	      }
+
+	      .hypothesis-card__body ul,
+	      .hypothesis-card__body ol {
+	        margin: 0 0 10px 0;
+	        padding-left: 20px;
+	        font-size: 14px;
+	        line-height: 1.7;
+	      }
+
+	      .hypothesis-card__body p > strong:first-child {
+	        color: #0f172a;
+	        font-weight: 850;
+	      }
+
+	      .hypothesis-card__body a {
+	        font-weight: 650;
 	      }
 
       .link-pill {
@@ -514,17 +762,19 @@
         border-color: rgba(148, 163, 184, 0.8);
       }
 
-	      .md img {
-	        max-width: 100%;
-	      }
-	      .md img:not(.company-logo) {
-	        display: block;
-	        margin: 18px auto;
-	        border-radius: 18px;
-	        border: 1px solid rgba(229, 231, 235, 0.9);
-	        box-shadow: 0 18px 40px rgba(2, 6, 23, 0.10);
-	        background: rgba(255, 255, 255, 0.9);
-	      }
+		      .md img {
+		        max-width: 100%;
+		        height: auto;
+		      }
+		      .md img:not(.company-logo) {
+		        display: block;
+		        margin: 18px auto;
+		        border-radius: 18px;
+		        border: 1px solid rgba(229, 231, 235, 0.9);
+		        box-shadow: 0 18px 40px rgba(2, 6, 23, 0.10);
+		        background: rgba(255, 255, 255, 0.9);
+		        max-height: min(620px, calc(100vh - 340px));
+		      }
 
       .controls {
         position: fixed;
@@ -682,20 +932,20 @@
           <span class="kbd">deck.md</span> and slide Markdown via <span class="kbd">fetch()</span>, so you’ll see a blank page.
         </p>
         <p>
-          From <span class="kbd">agent-builder-tools/final-presentation</span>, run
+          From <span class="kbd">final-presentation</span>, run
           <span class="kbd">./serve.sh</span>.
         </p>
-        <p>Then open the printed URL (it will look like <span class="kbd">http://localhost:8001/agent-builder-tools/final-presentation/presentation.html</span>).</p>
+        <p>Then open the printed URL (it will look like <span class="kbd">http://localhost:8001/presentation.html</span>).</p>
       </div>
     </div>
-    <div id="root">
-      <div class="boot">
-        <div class="boot-card">
-          <h2>Loading…</h2>
-          <p>If this stays blank, run <span class="kbd">./serve.sh</span> from <span class="kbd">agent-builder-tools/final-presentation</span>.</p>
-        </div>
-      </div>
-    </div>
+	      <div id="root">
+	      <div class="boot">
+	        <div class="boot-card">
+	          <h2>Loading…</h2>
+	          <p>If this stays blank, run <span class="kbd">./serve.sh</span> from <span class="kbd">final-presentation</span>.</p>
+	        </div>
+	      </div>
+	    </div>
 
     <script>
       (function () {
@@ -748,7 +998,7 @@
 
         const hosts = ["localhost", "127.0.0.1", "[::1]"];
         const ports = [8001, 8002, 8003, 8004, 8005, 8006, 8007, 8008, 8009, 8010];
-        const prefixes = ["/agent-builder-tools/final-presentation", ""];
+        const prefixes = ["", "/final-presentation"];
 
         const candidates = [];
         for (const port of ports) {
@@ -830,7 +1080,6 @@
         if (!v) return null;
         v = v.replace(/^(\.\/)+/, "");
         v = v.replace(/^\//, "");
-        v = v.replace(/^agent-builder-tools\/final-presentation\//, "");
         v = v.replace(/^final-presentation\//, "");
         return v;
       };
@@ -897,8 +1146,10 @@
           const [index, setIndex] = useState(0);
           const [cache, setCache] = useState(() => new Map());
           const [slide, setSlide] = useState({ loading: true, error: null, html: "", title: "", section: "" });
+          const [financialData, setFinancialData] = useState(null);
           const lastNavAt = useRef(0);
           const contentRef = useRef(null);
+          const tooltipRef = useRef(null);
 
         const slides = deck.slides;
         const total = slides.length;
@@ -938,6 +1189,33 @@
 	          syncFromHash();
 	          return () => window.removeEventListener("hashchange", syncFromHash);
 	        }, [total]);
+
+	        // Load financial data
+	        useEffect(() => {
+	          fetch("assets/company_financial_data.json")
+	            .then((res) => res.json())
+	            .then((data) => setFinancialData(data))
+	            .catch((err) => {
+	              console.warn("Failed to load financial data:", err);
+	              setFinancialData({ companies: {} });
+	            });
+	        }, []);
+
+	        // Create tooltip element
+	        useEffect(() => {
+	          if (tooltipRef.current) return;
+	          const tooltip = document.createElement("div");
+	          tooltip.className = "financial-tooltip";
+	          tooltip.id = "financial-tooltip";
+	          document.body.appendChild(tooltip);
+	          tooltipRef.current = tooltip;
+	          return () => {
+	            if (tooltipRef.current) {
+	              tooltipRef.current.remove();
+	              tooltipRef.current = null;
+	            }
+	          };
+	        }, []);
 
 	        const slugify = (value) =>
 	          String(value || "")
@@ -992,6 +1270,134 @@
             a.textContent = labelForUrl(href);
           };
 
+          const liftCompaniesLine = (card) => {
+            if (!card) return;
+            const header = card.querySelector(".hypothesis-card__header");
+            const body = card.querySelector(".hypothesis-card__body");
+            if (!header || !body) return;
+            if (card.querySelector(".hypothesis-card__companies")) return;
+
+            const items = Array.from(body.querySelectorAll("li"));
+            const target = items.find((li) => {
+              const first = li.firstElementChild;
+              if (!first || first.tagName !== "STRONG") return false;
+              const label = (first.textContent || "").trim().toLowerCase();
+              return label === "companies:" || label === "tags:";
+            });
+            if (!target) return;
+
+            const row = document.createElement("div");
+            row.className = "hypothesis-card__companies";
+
+            const labelEl = document.createElement("span");
+            labelEl.className = "hypothesis-card__companies-label";
+            labelEl.textContent = "Companies";
+            row.appendChild(labelEl);
+
+            const chips = document.createElement("div");
+            chips.className = "hypothesis-card__companies-chips";
+
+            const codes = Array.from(target.querySelectorAll("code"));
+            if (codes.length) {
+              for (const code of codes) chips.appendChild(code);
+            } else {
+              const text = (target.textContent || "").replace(/^(companies|tags)\\s*:/i, "").trim();
+              if (text) chips.textContent = text;
+            }
+
+            row.appendChild(chips);
+
+            const list = target.parentElement;
+            if (list?.parentElement) {
+              list.parentElement.insertBefore(row, list);
+            } else {
+              body.insertBefore(row, body.firstChild);
+            }
+
+            target.remove();
+            if (list && !list.querySelector("li")) list.remove();
+          };
+
+          const isHypothesesHeading = (el) => {
+            if (!el || el.tagName !== "H2") return false;
+            const text = (el.textContent || "").trim().toLowerCase();
+            if (!text) return false;
+            if (text.startsWith("segment hypotheses")) return true;
+            return text === "hypotheses" || text.includes("hypotheses");
+          };
+
+          const wrapHypothesisSection = (heading) => {
+            if (!heading || heading.closest(".hypothesis-section")) return;
+            const parent = heading.parentElement;
+            if (!parent) return;
+
+            const section = document.createElement("section");
+            section.className = "hypothesis-section";
+
+            const intro = document.createElement("div");
+            intro.className = "hypothesis-section__intro";
+
+            const grid = document.createElement("div");
+            grid.className = "hypothesis-grid";
+
+            const cursorStart = heading.nextElementSibling;
+
+            parent.insertBefore(section, heading);
+            section.appendChild(heading);
+            section.appendChild(intro);
+            section.appendChild(grid);
+
+            let cursor = cursorStart;
+            let currentBody = null;
+
+            while (cursor) {
+              const next = cursor.nextElementSibling;
+              if (cursor.tagName === "H2") break;
+
+              if (cursor.tagName === "H3") {
+                const card = document.createElement("div");
+                card.className = "hypothesis-card";
+
+                const header = document.createElement("div");
+                header.className = "hypothesis-card__header";
+
+                const body = document.createElement("div");
+                body.className = "hypothesis-card__body";
+
+                header.appendChild(cursor);
+                card.appendChild(header);
+                card.appendChild(body);
+                grid.appendChild(card);
+                currentBody = body;
+              } else if (cursor.tagName === "HR") {
+                cursor.remove();
+              } else if (!currentBody) {
+                intro.appendChild(cursor);
+              } else {
+                currentBody.appendChild(cursor);
+              }
+
+              cursor = next;
+            }
+
+            for (const card of Array.from(grid.querySelectorAll(".hypothesis-card"))) {
+              liftCompaniesLine(card);
+            }
+
+            if (!grid.childElementCount) {
+              parent.insertBefore(heading, section);
+              while (intro.firstChild) parent.insertBefore(intro.firstChild, section);
+              section.remove();
+              return;
+            }
+
+            if (!intro.childElementCount) intro.remove();
+          };
+
+          for (const h2 of Array.from(root.querySelectorAll("h2"))) {
+            if (isHypothesesHeading(h2)) wrapHypothesisSection(h2);
+          }
+
 	          const tables = Array.from(root.querySelectorAll("table"));
 
 	          const buildLogoImg = (name, className) => {
@@ -1042,6 +1448,53 @@
 	          const isHeading = (el) => {
 	            const t = el?.tagName?.toLowerCase?.();
 	            return t === "h2" || t === "h3" || t === "h4";
+	          };
+
+	          const wrapHypothesesAsCards = (container) => {
+	            if (!container) return;
+
+	            const headings = Array.from(container.querySelectorAll("h3")).filter((h) =>
+	              /^hypothesis\\s+\\d+\\b/i.test((h.textContent || "").trim())
+	            );
+	            if (!headings.length) return;
+
+	            for (const h of headings) {
+	              if (h.closest(".hypothesis-card")) continue;
+	              const parent = h.parentElement;
+	              if (!parent) continue;
+
+	              const card = document.createElement("div");
+	              card.className = "hypothesis-card";
+
+	              const header = document.createElement("div");
+	              header.className = "hypothesis-card__header";
+
+	              const body = document.createElement("div");
+	              body.className = "hypothesis-card__body";
+
+	              parent.insertBefore(card, h);
+	              card.appendChild(header);
+	              header.appendChild(h);
+	              card.appendChild(body);
+
+	              let node = card.nextElementSibling;
+	              while (node) {
+	                const next = node.nextElementSibling;
+	                const tag = node.tagName?.toLowerCase?.();
+
+	                if (tag === "hr") {
+	                  node.remove();
+	                  break;
+	                }
+
+	                if (isHeading(node)) break;
+
+	                body.appendChild(node);
+	                node = next;
+	              }
+
+                liftCompaniesLine(card);
+	            }
 	          };
 
 	          const findSectionHeading = (startEl) => {
@@ -1132,6 +1585,74 @@
 	            return marketMapPalette[idx];
 	          };
 
+	          // Parse financial value to number for sorting
+	          const parseFinancialValue = (value) => {
+	            if (!value) return 0;
+	            const valStr = String(value).toUpperCase().trim();
+	            
+	            // Extract number part (handles $, commas, decimals, +)
+	            const numMatch = valStr.match(/([\d.]+)/);
+	            if (!numMatch) return 0;
+	            
+	            let num = parseFloat(numMatch[1]);
+	            if (isNaN(num)) return 0;
+	            
+	            // Handle multipliers (check for T, B, M, K)
+	            if (valStr.includes("T") || valStr.includes("TRIL")) {
+	              num *= 1000000000000;
+	            } else if (valStr.includes("B") || valStr.includes("BIL")) {
+	              num *= 1000000000;
+	            } else if (valStr.includes("M") || valStr.includes("MIL")) {
+	              num *= 1000000;
+	            } else if (valStr.includes("K") || valStr.includes("THOU")) {
+	              num *= 1000;
+	            }
+	            
+	            return num;
+	          };
+
+	          // Format financial value for display
+	          const formatFinancialValue = (value) => {
+	            if (!value) return null;
+	            const num = parseFinancialValue(value);
+	            if (num === 0) return null;
+	            
+	            if (num >= 1000000000000) return `$${(num / 1000000000000).toFixed(1)}T`;
+	            if (num >= 1000000000) return `$${(num / 1000000000).toFixed(1)}B`;
+	            if (num >= 1000000) return `$${(num / 1000000).toFixed(1)}M`;
+	            if (num >= 1000) return `$${(num / 1000).toFixed(1)}K`;
+	            return `$${num.toFixed(0)}`;
+	          };
+
+	          // Get primary financial metric for a company
+	          const getPrimaryFinancial = (companyData) => {
+	            if (!companyData) return { value: null, type: null, num: 0 };
+	            
+	            // Priority: revenue > market_cap > fundraise
+	            if (companyData.revenue) {
+	              return { 
+	                value: companyData.revenue, 
+	                type: "revenue", 
+	                num: parseFinancialValue(companyData.revenue) 
+	              };
+	            }
+	            if (companyData.market_cap) {
+	              return { 
+	                value: companyData.market_cap, 
+	                type: "market cap", 
+	                num: parseFinancialValue(companyData.market_cap) 
+	              };
+	            }
+	            if (companyData.fundraise) {
+	              return { 
+	                value: companyData.fundraise, 
+	                type: "funding", 
+	                num: parseFinancialValue(companyData.fundraise) 
+	              };
+	            }
+	            return { value: null, type: null, num: 0 };
+	          };
+
 	          const buildMarketMap = (sections) => {
 	            const map = document.createElement("div");
 	            map.className = "market-map";
@@ -1170,7 +1691,33 @@
 	              const companies = document.createElement("div");
 	              companies.className = "market-map__companies";
 
-	              for (const entry of section.entries) {
+	              // Sort entries by financial value (highest first)
+	              const sortedEntries = [...section.entries].sort((a, b) => {
+	                if (!financialData?.companies) return 0;
+	                
+	                const slugA = slugify(a.name);
+	                const slugB = slugify(b.name);
+	                const dataA = financialData.companies[slugA];
+	                const dataB = financialData.companies[slugB];
+	                
+	                const financialA = getPrimaryFinancial(dataA);
+	                const financialB = getPrimaryFinancial(dataB);
+	                
+	                // Companies with data come first, sorted by value (descending)
+	                if (financialA.num > 0 && financialB.num > 0) {
+	                  return financialB.num - financialA.num;
+	                }
+	                if (financialA.num > 0) return -1;
+	                if (financialB.num > 0) return 1;
+	                return 0; // Keep original order for companies without data
+	              });
+
+	              for (const entry of sortedEntries) {
+	                const slug = slugify(entry.name);
+	                const companyData = financialData?.companies?.[slug];
+	                const financial = getPrimaryFinancial(companyData);
+	                const formattedValue = financial.value ? formatFinancialValue(financial.value) : null;
+
 	                const a = document.createElement("a");
 	                a.className = "market-map__item";
 	                a.href = entry.href;
@@ -1185,6 +1732,14 @@
 	                name.className = "market-map__name";
 	                name.textContent = entry.name;
 	                a.appendChild(name);
+
+	                // Add financial metric if available
+	                if (formattedValue) {
+	                  const financialEl = document.createElement("div");
+	                  financialEl.className = "market-map__financial";
+	                  financialEl.textContent = formattedValue;
+	                  a.appendChild(financialEl);
+	                }
 
 	                companies.appendChild(a);
 	              }
@@ -1205,15 +1760,35 @@
 	            details.appendChild(summary);
 
 	            for (const section of sections) {
-	              const label = document.createElement("div");
-	              label.className = "market-map__source-label";
-	              label.textContent = section.label || "Companies";
-	              details.appendChild(label);
+	              const colors = accentForLabel(section.label || "Companies");
+
+	              const group = document.createElement("div");
+	              group.className = "market-map__source-group";
+	              group.style.setProperty("--market-map-accent", colors.accent);
+	              group.style.setProperty("--market-map-accent-bg", colors.bg);
+	              group.style.setProperty("--market-map-accent-border", colors.border);
+
+	              const header = document.createElement("div");
+	              header.className = "market-map__source-header";
+
+	              const title = document.createElement("div");
+	              title.className = "market-map__source-title";
+	              title.textContent = section.label || "Companies";
+
+	              const meta = document.createElement("div");
+	              meta.className = "market-map__source-meta";
+	              meta.textContent = `${section.entries?.length || 0} companies`;
+
+	              header.appendChild(title);
+	              header.appendChild(meta);
+	              group.appendChild(header);
 
 	              if (section.tableWrap) {
 	                section.tableWrap.style.display = "";
-	                details.appendChild(section.tableWrap);
+	                group.appendChild(section.tableWrap);
 	              }
+
+	              details.appendChild(group);
 	            }
 
 	            return details;
@@ -1332,7 +1907,179 @@
 	              map.appendChild(buildSourcesDetails(marketMapSections));
 	            }
 	          }
-	        }, [slide.html]);
+
+	          // Attach financial data tooltips to company elements
+	          if (financialData && tooltipRef.current) {
+	            const tooltip = tooltipRef.current;
+	            
+	            const formatFinancialValue = (value, date) => {
+	              if (!value) return null;
+	              return date ? `${value} (${date})` : value;
+	            };
+
+	            const showTooltip = (element, companyName) => {
+	              const slug = slugify(companyName);
+	              const data = financialData.companies?.[slug];
+	              
+	              if (!data) return;
+	              
+	              // Check if there's any financial data to show
+	              const hasData = data.revenue || data.fundraise || data.market_cap;
+	              if (!hasData) return;
+	              
+	              // Build tooltip content
+	              const title = document.createElement("div");
+	              title.className = "financial-tooltip__title";
+	              title.textContent = companyName;
+	              
+	              tooltip.innerHTML = "";
+	              tooltip.appendChild(title);
+	              
+	              if (data.revenue) {
+	                const item = document.createElement("div");
+	                item.className = "financial-tooltip__item";
+	                const label = document.createElement("span");
+	                label.className = "financial-tooltip__label";
+	                label.textContent = "Revenue:";
+	                const value = document.createElement("span");
+	                value.className = "financial-tooltip__value";
+	                value.textContent = formatFinancialValue(data.revenue, data.revenue_year);
+	                item.appendChild(label);
+	                item.appendChild(value);
+	                tooltip.appendChild(item);
+	              }
+	              
+	              if (data.fundraise) {
+	                const item = document.createElement("div");
+	                item.className = "financial-tooltip__item";
+	                const label = document.createElement("span");
+	                label.className = "financial-tooltip__label";
+	                label.textContent = "Funding:";
+	                const value = document.createElement("span");
+	                value.className = "financial-tooltip__value";
+	                value.textContent = formatFinancialValue(data.fundraise, data.fundraise_date);
+	                item.appendChild(label);
+	                item.appendChild(value);
+	                tooltip.appendChild(item);
+	              }
+	              
+	              if (data.market_cap) {
+	                const item = document.createElement("div");
+	                item.className = "financial-tooltip__item";
+	                const label = document.createElement("span");
+	                label.className = "financial-tooltip__label";
+	                label.textContent = "Market Cap:";
+	                const value = document.createElement("span");
+	                value.className = "financial-tooltip__value";
+	                value.textContent = formatFinancialValue(data.market_cap, data.market_cap_date);
+	                item.appendChild(label);
+	                item.appendChild(value);
+	                tooltip.appendChild(item);
+	              }
+	              
+	              if (data.notes) {
+	                const item = document.createElement("div");
+	                item.className = "financial-tooltip__item";
+	                item.style.marginTop = "8px";
+	                item.style.paddingTop = "8px";
+	                item.style.borderTop = "1px solid rgba(255, 255, 255, 0.1)";
+	                const note = document.createElement("span");
+	                note.className = "financial-tooltip__value";
+	                note.style.fontSize = "11px";
+	                note.style.color = "rgba(248, 250, 252, 0.75)";
+	                note.textContent = data.notes;
+	                item.appendChild(note);
+	                tooltip.appendChild(item);
+	              }
+	              
+	              // Position tooltip
+	              const rect = element.getBoundingClientRect();
+	              const tooltipRect = tooltip.getBoundingClientRect();
+	              const scrollX = window.scrollX || window.pageXOffset;
+	              const scrollY = window.scrollY || window.pageYOffset;
+	              
+	              let left = rect.left + scrollX + (rect.width / 2) - (tooltipRect.width / 2);
+	              let top = rect.bottom + scrollY + 8;
+	              
+	              // Adjust if tooltip goes off screen
+	              if (left + tooltipRect.width > window.innerWidth + scrollX) {
+	                left = window.innerWidth + scrollX - tooltipRect.width - 10;
+	              }
+	              if (left < scrollX) {
+	                left = scrollX + 10;
+	              }
+	              if (top + tooltipRect.height > window.innerHeight + scrollY) {
+	                top = rect.top + scrollY - tooltipRect.height - 8;
+	              }
+	              
+	              tooltip.style.left = `${left}px`;
+	              tooltip.style.top = `${top}px`;
+	              tooltip.classList.add("visible");
+	            };
+	            
+	            const hideTooltip = () => {
+	              if (tooltip) {
+	                tooltip.classList.remove("visible");
+	              }
+	            };
+	            
+	            // Attach to market map items
+	            for (const item of root.querySelectorAll(".market-map__item")) {
+	              const nameEl = item.querySelector(".market-map__name");
+	              if (nameEl) {
+	                const companyName = nameEl.textContent.trim();
+	                item.addEventListener("mouseenter", (e) => showTooltip(e.currentTarget, companyName));
+	                item.addEventListener("mouseleave", hideTooltip);
+	                item.addEventListener("mousemove", (e) => {
+	                  if (tooltip.classList.contains("visible")) {
+	                    const rect = e.currentTarget.getBoundingClientRect();
+	                    const tooltipRect = tooltip.getBoundingClientRect();
+	                    const scrollX = window.scrollX || window.pageXOffset;
+	                    const scrollY = window.scrollY || window.pageYOffset;
+	                    
+	                    let left = rect.left + scrollX + (rect.width / 2) - (tooltipRect.width / 2);
+	                    let top = rect.bottom + scrollY + 8;
+	                    
+	                    if (left + tooltipRect.width > window.innerWidth + scrollX) {
+	                      left = window.innerWidth + scrollX - tooltipRect.width - 10;
+	                    }
+	                    if (left < scrollX) {
+	                      left = scrollX + 10;
+	                    }
+	                    if (top + tooltipRect.height > window.innerHeight + scrollY) {
+	                      top = rect.top + scrollY - tooltipRect.height - 8;
+	                    }
+	                    
+	                    tooltip.style.left = `${left}px`;
+	                    tooltip.style.top = `${top}px`;
+	                  }
+	                });
+	              }
+	            }
+	            
+	            // Attach to company cells in tables
+	            for (const cell of root.querySelectorAll(".company-cell")) {
+	              const nameEl = cell.querySelector("span:not(.company-logo)");
+	              if (nameEl) {
+	                const companyName = nameEl.textContent.trim();
+	                cell.addEventListener("mouseenter", (e) => showTooltip(e.currentTarget, companyName));
+	                cell.addEventListener("mouseleave", hideTooltip);
+	              }
+	            }
+	            
+	            // Attach to company chips
+	            for (const chip of root.querySelectorAll(".company-chip")) {
+	              const nameEl = chip.querySelector("span:not(.company-logo)");
+	              if (nameEl) {
+	                const companyName = nameEl.textContent.trim();
+	                chip.addEventListener("mouseenter", (e) => showTooltip(e.currentTarget, companyName));
+	                chip.addEventListener("mouseleave", hideTooltip);
+	              }
+	            }
+	          }
+
+	          wrapHypothesesAsCards(root);
+	        }, [slide.html, financialData]);
 
         useEffect(() => {
           const loadDeck = async () => {
@@ -1468,7 +2215,7 @@
                 "Tip: run ",
                 React.createElement("span", { className: "kbd" }, "./serve.sh"),
                 " from ",
-                React.createElement("span", { className: "kbd" }, "agent-builder-tools/final-presentation"),
+                React.createElement("span", { className: "kbd" }, "final-presentation"),
                 " and open the printed URL.",
                 "."
               )

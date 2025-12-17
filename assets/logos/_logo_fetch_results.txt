@@ -1,1 +1,52 @@
 Company	Slug	Method	Primary Link
+Adopt AI Agent Builder	adopt-ai-agent-builder	google_favicon	https://www.adopt.ai/product/agent-builder
+Ag.dev	ag-dev	google_favicon	https://ag.dev
+AgenticScale.AI Agent Builder	agenticscale-ai-agent-builder	google_favicon	https://www.agenticscale.ai/agent-builder
+Alation Agent Studio	alation-agent-studio	google_favicon	https://www.alation.com/product/agent-studio/
+Atlassian Rovo Studio	atlassian-rovo-studio	google_favicon	https://support.atlassian.com/rovo/docs/get-to-know-rovo-studio/
+Automaited	automaited	google_favicon	https://www.automaited.com/platform/workflow-automation
+Automation Anywhere	automation-anywhere	google_favicon	https://www.automationanywhere.com
+Bardeen	bardeen	google_favicon	https://www.bardeen.ai/
+Beam AI	beam-ai	google_favicon	https://beam.ai
+Boomi Agentstudio	boomi-agentstudio	google_favicon	https://boomi.com/products/agentstudio/
+Botpress	botpress	google_favicon	https://botpress.com/
+Den (GetDen)	den-getden	google_favicon	https://getden.io
+Dify	dify	google_favicon	https://dify.ai
+Dust	dust	google_favicon	https://dust.tt
+Dynamiq	dynamiq	google_favicon	https://www.getdynamiq.ai/product/agents
+Flowise	flowise	google_favicon	https://flowiseai.com
+Freshworks AI Agent Studio	freshworks-ai-agent-studio	google_favicon	https://www.freshworks.com/freddy-ai/agent-studio/
+Gumloop	gumloop	google_favicon	https://www.gumloop.com
+HubSpot Breeze Agents / Studio	hubspot-breeze-agents-studio	google_favicon	https://knowledge.hubspot.com/breeze/customize-an-agent
+Hyland AI Agent Builder	hyland-ai-agent-builder	google_favicon	https://www.hyland.com/en/solutions/products/hyland-agent-builder
+Hypermindz Agentic Platform	hypermindz-agentic-platform	google_favicon	https://www.hypermindz.ai/discover-platform
+Jinba	jinba	not_found	https://jinba.io
+Kissflow	kissflow	google_favicon	https://kissflow.com/ai/
+Langflow	langflow	google_favicon	https://www.langflow.org
+Lindy.ai	lindy-ai	google_favicon	https://www.lindy.ai
+Make AI Agents	make-ai-agents	google_favicon	https://www.make.com
+Microsoft Copilot Studio	microsoft-copilot-studio	google_favicon	https://copilotstudio.microsoft.com
+MindStudio (YouAI)	mindstudio-youai	google_favicon	https://youai.ai/mindstudio
+n8n	n8n	google_favicon	https://n8n.io
+Nainovate GenX	nainovate-genx	google_favicon	https://www.nainovate.ai/platform/development-tools/
+Oracle AI Agent Studio (Fusion AI)	oracle-ai-agent-studio-fusion-ai	google_favicon	https://docs.oracle.com/en/cloud/saas/fusion-ai/aiaas/overview.html
+OutSystems Agent Workbench	outsystems-agent-workbench	google_favicon	https://www.outsystems.com/low-code-platform/agentic-ai-workbench/
+Regrello (from Salesforce)	regrello-from-salesforce	google_favicon	https://www.regrello.com/
+Relay.app	relay-app	google_favicon	https://www.relay.app
+Relevance AI	relevance-ai	google_favicon	https://relevanceai.com
+Rivet	rivet	google_favicon	https://rivet.ironcladapp.com/
+Salesforce Agentforce	salesforce-agentforce	google_favicon	https://www.salesforce.com/agentforce/agent-builder/
+SAP Joule Studio	sap-joule-studio	google_favicon	https://help.sap.com/docs/joule-studio
+ServiceNow AI Agent Studio	servicenow-ai-agent-studio	google_favicon	https://www.servicenow.com/products/ai-agents.html
+SmythOS Agent Studio	smythos-agent-studio	google_favicon	https://smythos.com/product/agent-studio/
+Sola	sola	google_favicon	https://www.sola.ai
+Stack AI	stack-ai	google_favicon	https://www.stack-ai.com
+Tray.io Merlin Agent Builder	tray-io-merlin-agent-builder	google_favicon	https://tray.ai/platform/agent-development
+UiPath Agent Builder	uipath-agent-builder	google_favicon	https://www.uipath.com/product/agent-builder
+Vellum	vellum	google_favicon	https://www.vellum.ai
+Voiceflow	voiceflow	google_favicon	https://www.voiceflow.com
+Workato Agent Studio	workato-agent-studio	google_favicon	https://www.workato.com/artificial-intelligence/agentic-ai
+Writer (Writer.com)	writer-writer-com	google_favicon	https://www.writer.com
+Zapier Agents	zapier-agents	google_favicon	https://zapier.com
+Zendesk AI Agent Builder	zendesk-ai-agent-builder	google_favicon	https://support.zendesk.com/hc/en-us/articles/7853861533722-Understanding-Agent-builder-and-agents-in-beta
+Zoho Zia Agent Studio	zoho-zia-agent-studio	google_favicon	https://www.zoho.com/zia/

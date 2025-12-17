@@ -30,7 +30,7 @@
         d="M1.5 2 L8.5 5 L1.5 8"
         fill="none"
         stroke="rgba(15,23,42,0.50)"
-        stroke-width="1.8"
+        stroke-width="1.6"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -49,7 +49,7 @@
         d="M8.5 2 L1.5 5 L8.5 8"
         fill="none"
         stroke="rgba(15,23,42,0.50)"
-        stroke-width="1.8"
+        stroke-width="1.6"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -68,7 +68,7 @@
         d="M1.5 2 L8.5 5 L1.5 8"
         fill="none"
         stroke="rgba(15,23,42,0.28)"
-        stroke-width="1.8"
+        stroke-width="1.6"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -87,7 +87,7 @@
         d="M8.5 2 L1.5 5 L8.5 8"
         fill="none"
         stroke="rgba(15,23,42,0.28)"
-        stroke-width="1.8"
+        stroke-width="1.6"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -159,7 +159,7 @@
 
       .label {
         fill: #0f172a;
-        font: 750 13px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font: 750 13.5px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       }
       .label-soft {
         fill: rgba(15, 23, 42, 0.76);
@@ -167,12 +167,12 @@
       }
       .note {
         fill: rgba(15, 23, 42, 0.66);
-        font: 540 13.5px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font: 540 14px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       }
 
       .arrow {
-        stroke: rgba(15, 23, 42, 0.5);
-        stroke-width: 2;
+        stroke: rgba(15, 23, 42, 0.48);
+        stroke-width: 1.8;
         fill: none;
         marker-end: url(#arrowEnd);
         stroke-linecap: round;
@@ -180,15 +180,15 @@
       }
       .arrow-soft {
         stroke: rgba(15, 23, 42, 0.28);
-        stroke-width: 2;
+        stroke-width: 1.8;
         fill: none;
         marker-end: url(#arrowEndSoft);
         stroke-linecap: round;
         stroke-linejoin: round;
       }
       .arrow-bidir {
-        stroke: rgba(15, 23, 42, 0.5);
-        stroke-width: 2;
+        stroke: rgba(15, 23, 42, 0.48);
+        stroke-width: 1.8;
         fill: none;
         marker-start: url(#arrowStart);
         marker-end: url(#arrowEnd);
@@ -197,7 +197,7 @@
       }
       .arrow-bidir-soft {
         stroke: rgba(15, 23, 42, 0.28);
-        stroke-width: 2;
+        stroke-width: 1.8;
         fill: none;
         marker-start: url(#arrowStartSoft);
         marker-end: url(#arrowEndSoft);
@@ -286,7 +286,6 @@
   <!-- Governance attachment -->
   <path class="arrow-soft dash" d="M600 190 L600 210" />
 
-  <!-- Kernel ↔ logging/evals/feedback (two clean lanes to avoid crowding) -->
-  <path class="arrow-soft dash" d="M594 510 L594 530" />
-  <path class="arrow-soft dash" d="M606 530 L606 510" />
+  <!-- Kernel ↔ logging/evals/feedback -->
+  <path class="arrow-bidir-soft dash" d="M600 510 L600 530" />
 </svg>

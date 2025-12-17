@@ -12,13 +12,15 @@ status: "Draft"
 
 ## Clear example: “Refund + customer support” agent
 
-- **Surface:** Helpdesk + payments APIs; sometimes browser for edge-case portals
-- **Tools:** Zendesk/Jira, Stripe, CRM, internal policy service, knowledge base
-- **Policies:** approval thresholds, PII handling, audit logs, safe rollback
-- **Memory:** ticket history, prior refunds, customer tier/context
-- **Evals:** policy compliance + refund correctness + deflection + CSAT
+- **Surface:** The surface is helpdesk and payments APIs, with a browser fallback for edge‑case portals.
+- **Tools:** The tool set is typically Zendesk/Jira, Stripe, a CRM, an internal policy service, and a knowledge base.
+- **Policies:** The policy layer enforces approval thresholds, PII handling, audit logs, and safe rollback behavior.
+- **Memory:** The memory layer includes ticket history, prior refunds, and customer tier/context.
+- **Evals:** The eval harness measures policy compliance, refund correctness, deflection, and CSAT.
 
-## What gets heavier in other domains (at a glance)
+![](assets/diagrams/customer_support_agent_scaffolding.png)
+
+## What gets heavier by domain
 
 | Domain | Surface | What gets heavier |
 | --- | --- | --- |
@@ -26,14 +28,14 @@ status: "Draft"
 | Finance ops | API + documents | provenance + reconciliation + human review |
 | Browser/desktop automation | browser/desktop | sessions + replays + breakage handling |
 
-## Adaptation is not a one-time setup (continual learning)
+## Adaptation is continual
 
 The best teams treat “domain adaptation” as a loop:
 
-1) **Instrument** runs (traces, tool calls, outcomes, human overrides)
-2) **Evaluate** against domain metrics (correctness, policy compliance, time/cost, escalation rate)
-3) **Create data** from failures + edge cases (curate, label, synthesize)
-4) **Update** the system (prompts, policies, adapters, and when justified: fine‑tune/RL)
+1) **Instrument** runs: traces, tool calls, outcomes, human overrides
+2) **Evaluate** against domain metrics: correctness, policy compliance, time/cost, escalation rate
+3) **Create data** from failures + edge cases: curate, label, synthesize
+4) **Update** the system: prompts, policies, adapters, and when justified, fine‑tune/RL
 
 This is how kernels turn “usage” into compounding reliability.
 

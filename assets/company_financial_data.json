@@ -1,0 +1,2725 @@
+{
+  "companies": {
+    "aws-amazon-bedrock-agentcore": {
+      "name": "AWS Amazon Bedrock AgentCore",
+      "revenue": "$574B",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$1.8T+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "cloud",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "agno": {
+      "name": "Agno",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Multi-agent framework",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "anchor-browser": {
+      "name": "Anchor Browser",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$3M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Browser automation",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "anon-com": {
+      "name": "Anon.com",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$6.5M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Browser automation, secure web integrations. Founded 2023, San Francisco. Investors: Union Square Ventures, Abstract Ventures",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk",
+        "browser-automation"
+      ]
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$7.3B+",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Amazon & Google investments, valuation ~$18B",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "hr",
+        "foundation-model",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "autoagent": {
+      "name": "AutoAgent",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Open-source research project (HKUDS), no separate funding",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "beeai-framework": {
+      "name": "BeeAI Framework",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Open-source framework, no separate funding",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "browser-use": {
+      "name": "Browser Use",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Open-source browser automation project, no separate funding",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "browserbase-stagehand": {
+      "name": "Browserbase Stagehand",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$4M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Browser automation platform",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "cerebrum-aios-sdk": {
+      "name": "Cerebrum (AIOS SDK)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Open-source research project (AIOS), no separate funding",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "cohere-tool-use-and-agents": {
+      "name": "Cohere (Tool use & agents)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$445M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Valuation $2.2B",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "foundation-model",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "crewai": {
+      "name": "CrewAI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$28M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "cyberdesk": {
+      "name": "Cyberdesk",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Desktop automation",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "security",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "dspy": {
+      "name": "DSPy",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Open-source research project (Stanford NLP), no separate funding",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "databricks-agent-bricks": {
+      "name": "Databricks Agent Bricks",
+      "revenue": "$3.8B",
+      "revenue_year": "2024",
+      "fundraise": "$10B",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Valuation $62B (Dec 2024)",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "data-platform",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "google-cloud-vertex-ai": {
+      "name": "Google Cloud Vertex AI",
+      "revenue": "$307B",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$1.8T+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "cloud",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "haystack": {
+      "name": "Haystack",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$30M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "deepset.ai, Series A",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "hugging-face-smolagents": {
+      "name": "Hugging Face smolagents",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$235M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series D, Valuation $4.5B",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "ibm-watsonx-orchestrate": {
+      "name": "IBM watsonx Orchestrate",
+      "revenue": "$60B+",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$180B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "induced-ai": {
+      "name": "Induced AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2.3M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "YC-backed browser automation",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "langchain": {
+      "name": "LangChain",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$45M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "langgraph": {
+      "name": "LangGraph",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$45M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Part of LangChain ecosystem - uses LangChain funding",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "letta": {
+      "name": "Letta",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$3M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI agent memory platform",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "llamaindex": {
+      "name": "LlamaIndex",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$8.5M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Seed",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "magnitude": {
+      "name": "Magnitude",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Browser agent platform",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "mastra": {
+      "name": "Mastra",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$5M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI framework",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "microsoft-autogen": {
+      "name": "Microsoft AutoGen",
+      "revenue": "$211B",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$3.2T+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "microsoft-semantic-kernel": {
+      "name": "Microsoft Semantic Kernel",
+      "revenue": "$211B",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$3.2T+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "mistral-agents-api": {
+      "name": "Mistral Agents API",
+      "revenue": "$30M",
+      "revenue_year": "2024",
+      "fundraise": "$1.1B+",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Seed: $113M (2023), Series A: $415M (2023), Series B: $640M (2024). Valuation $6.2B",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "foundation-model",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "mozilla-ai-agent-platform": {
+      "name": "Mozilla.ai Agent Platform",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$30M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Mozilla.ai funding",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "multion": {
+      "name": "MultiOn",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$25M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "openai": {
+      "name": "OpenAI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$46.6B+",
+      "fundraise_date": "2025",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": "CNBC, TechCrunch",
+      "notes": "Multiple rounds: $6.6B (Oct 2024, $157B val), $40B (Mar 2025, $300B val). Total includes Microsoft $10B+ investment",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "foundation-model",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "openai-agents-sdk": {
+      "name": "OpenAI Agents SDK",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$46.6B+",
+      "fundraise_date": "2025",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Product of OpenAI - uses OpenAI's funding. Multiple rounds: $6.6B (Oct 2024, $157B val), $40B (Mar 2025, $300B val). Total includes Microsoft $10B+ investment",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "foundation-model",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "pydanticai": {
+      "name": "PydanticAI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$8M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Framework platform",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "scrapybara": {
+      "name": "Scrapybara",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Browser automation",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "simular-ai-agent-s": {
+      "name": "Simular AI (Agent S)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$500K",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Computer use automation",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "skyvern": {
+      "name": "Skyvern",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$4.5M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Seed round",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "snowflake-cortex-agents": {
+      "name": "Snowflake Cortex Agents",
+      "revenue": "$2.8B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$50B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "data-platform",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "steel-dev": {
+      "name": "Steel.dev",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$6M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Browser infrastructure",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "tinyfish-agentql": {
+      "name": "TinyFish / AgentQL",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$47M",
+      "fundraise_date": "2025",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A led by ICONIQ Capital (Aug 2025)",
+      "segment": "Developer & SDK-first",
+      "tags": [
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    "adopt-ai-agent-builder": {
+      "name": "Adopt AI Agent Builder",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$3M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Agent builder platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "ag-dev": {
+      "name": "Ag.dev",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI agent platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "agenticscale-ai-agent-builder": {
+      "name": "AgenticScale.AI Agent Builder",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI agent builder",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "alation-agent-studio": {
+      "name": "Alation Agent Studio",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$340M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series E, Valuation $1.7B",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "atlassian-rovo-studio": {
+      "name": "Atlassian Rovo Studio",
+      "revenue": "$3.8B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$50B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "automaited": {
+      "name": "Automaited",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$5M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Workflow automation",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "automation-anywhere": {
+      "name": "Automation Anywhere",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$840M",
+      "fundraise_date": "2021",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Valuation $6.8B",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder",
+        "automation"
+      ]
+    },
+    "bardeen": {
+      "name": "Bardeen",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$15M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "beam-ai": {
+      "name": "Beam AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$4M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Automation platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "boomi-agentstudio": {
+      "name": "Boomi Agentstudio",
+      "revenue": "$102B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$100B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": "Subsidiary of Dell Technologies",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "botpress": {
+      "name": "Botpress",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$15M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "den-getden": {
+      "name": "Den (GetDen)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Workflow platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "dify": {
+      "name": "Dify",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$7M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Seed",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "dust": {
+      "name": "Dust",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$16M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "dynamiq": {
+      "name": "Dynamiq",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI workflow platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "flowise": {
+      "name": "Flowise",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Now part of Workday; no separate public funding data",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "freshworks-ai-agent-studio": {
+      "name": "Freshworks AI Agent Studio",
+      "revenue": "$600M+",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$3B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder",
+        "customer-support"
+      ]
+    },
+    "gumloop": {
+      "name": "Gumloop",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$3M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Workflow automation",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "hubspot-breeze-agents-studio": {
+      "name": "HubSpot Breeze Agents / Studio",
+      "revenue": "$2.2B",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$30B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder",
+        "sales"
+      ]
+    },
+    "hyland-ai-agent-builder": {
+      "name": "Hyland AI Agent Builder",
+      "revenue": "$1B+",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Private company",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "hypermindz-agentic-platform": {
+      "name": "Hypermindz Agentic Platform",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$5M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Agentic platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "jinba": {
+      "name": "Jinba",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$8M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Workflow automation platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "kissflow": {
+      "name": "Kissflow",
+      "revenue": "$50M+",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Private company",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "langflow": {
+      "name": "Langflow",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$10M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "DataStax-backed workflow platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "lindy-ai": {
+      "name": "Lindy.ai",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$27M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A, includes $6M seed (2023)",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "make-ai-agents": {
+      "name": "Make AI Agents",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$70M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "microsoft-copilot-studio": {
+      "name": "Microsoft Copilot Studio",
+      "revenue": "$211B",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$3.2T+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "mindstudio-youai": {
+      "name": "MindStudio (YouAI)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$10M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI agent builder platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "nainovate-genx": {
+      "name": "Nainovate GenX",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$10M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Enterprise AI platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "oracle-ai-agent-studio-fusion-ai": {
+      "name": "Oracle AI Agent Studio (Fusion AI)",
+      "revenue": "$50B+",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$400B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "outsystems-agent-workbench": {
+      "name": "OutSystems Agent Workbench",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$362M",
+      "fundraise_date": "2021",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Private equity, Valuation $1B+",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "regrello-from-salesforce": {
+      "name": "Regrello (from Salesforce)",
+      "revenue": "$34.9B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$250B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder",
+        "sales"
+      ]
+    },
+    "relay-app": {
+      "name": "Relay.app",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$5M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Workflow automation platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "relevance-ai": {
+      "name": "Relevance AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$10M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Seed",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "rivet": {
+      "name": "Rivet",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Open-source project by Ironclad (Ironclad has raised $100M+), no separate funding",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "sap-joule-studio": {
+      "name": "SAP Joule Studio",
+      "revenue": "$34B+",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$200B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "salesforce-agentforce": {
+      "name": "Salesforce Agentforce",
+      "revenue": "$34.9B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$250B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder",
+        "sales"
+      ]
+    },
+    "servicenow-ai-agent-studio": {
+      "name": "ServiceNow AI Agent Studio",
+      "revenue": "$9.0B",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$150B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder",
+        "customer-support"
+      ]
+    },
+    "smythos-agent-studio": {
+      "name": "SmythOS Agent Studio",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$12M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Agent studio platform",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "sola": {
+      "name": "Sola",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$500K+",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "YC-backed desktop automation",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "stack-ai": {
+      "name": "Stack AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$3.5M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Seed",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "tray-io-merlin-agent-builder": {
+      "name": "Tray.io Merlin Agent Builder",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$50M",
+      "fundraise_date": "2021",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "uipath-agent-builder": {
+      "name": "UiPath Agent Builder",
+      "revenue": "$1.3B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$10B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder",
+        "automation"
+      ]
+    },
+    "vellum": {
+      "name": "Vellum",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$28M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "voiceflow": {
+      "name": "Voiceflow",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$15M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "workato-agent-studio": {
+      "name": "Workato Agent Studio",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$200M",
+      "fundraise_date": "2021",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series E, Valuation $5.7B",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "writer-writer-com": {
+      "name": "Writer (Writer.com)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$100M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series B, Valuation $500M",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "zapier-agents": {
+      "name": "Zapier Agents",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "Private",
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Bootstrapped, profitable",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "zendesk-ai-agent-builder": {
+      "name": "Zendesk AI Agent Builder",
+      "revenue": "$1.7B",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$10B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder",
+        "customer-support"
+      ]
+    },
+    "zoho-zia-agent-studio": {
+      "name": "Zoho Zia Agent Studio",
+      "revenue": "$1B+",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Private, profitable",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "n8n": {
+      "name": "n8n",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$240M",
+      "fundraise_date": "2025",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Multiple rounds: Series B ($60M, Mar 2025), Series C ($180M, Oct 2025). Valuation $2.5B",
+      "segment": "No-code & Visual",
+      "tags": [
+        "no-code",
+        "visual-builder"
+      ]
+    },
+    "ada": {
+      "name": "Ada",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$190M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C, Valuation $1.2B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "customer-support",
+        "chatbot",
+        "ai-agents"
+      ]
+    },
+    "aisera": {
+      "name": "Aisera",
+      "revenue": "$7.6M",
+      "revenue_year": "2024",
+      "fundraise": "$90M+",
+      "fundraise_date": "2020",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series B: $14.5M (2019), $20M (2020), Series C: $40M (2020). Valuation $1.2B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "appzen": {
+      "name": "AppZen",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$110M",
+      "fundraise_date": "2021",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "Vertical-specific",
+      "tags": [
+        "expense-management",
+        "finance-automation",
+        "ai"
+      ]
+    },
+    "auditoria-ai": {
+      "name": "Auditoria.AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$8M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Finance automation platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "finance"
+      ]
+    },
+    "boost-ai": {
+      "name": "boost.ai",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$22M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "Vertical-specific",
+      "tags": [
+        "chatbot",
+        "conversational-ai",
+        "customer-service"
+      ]
+    },
+    "cognigy": {
+      "name": "Cognigy",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$44M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "conversational-ai",
+        "contact-center",
+        "nlp"
+      ]
+    },
+    "contractpodai": {
+      "name": "ContractPodAi",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$55M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Legal contract platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "legal"
+      ]
+    },
+    "cresta": {
+      "name": "Cresta",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$80M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "decagon": {
+      "name": "Decagon",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$131M",
+      "fundraise_date": "2025",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Valuation $1.5B after raising $131M",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "eliseai": {
+      "name": "EliseAI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$26M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Real estate/housing operations platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "ema": {
+      "name": "Ema",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$61M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A totals $50M; $61M raised to date. Customer base tripled since launch from stealth (Mar\u2192Jul 2024)",
+      "segment": "AI employees / digital workers"
+    },
+    "espressive": {
+      "name": "Espressive",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$30M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "IT support automation",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "evisort": {
+      "name": "Evisort",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$100M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "legal"
+      ]
+    },
+    "forethought": {
+      "name": "Forethought",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$65M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "giga": {
+      "name": "Giga",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Early-stage startup, funding not publicly disclosed",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "glean-ai-ap": {
+      "name": "Glean.ai (AP)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$200M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series D, Valuation $2.2B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "finance"
+      ]
+    },
+    "glia": {
+      "name": "Glia",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$100M+",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Customer support platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "harvey": {
+      "name": "Harvey",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$700M+",
+      "fundraise_date": "2025",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C: $100M (2024), Series D: $300M at $3B valuation (2025), Series E: $300M at $5B valuation (2025)",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "legal"
+      ]
+    },
+    "hyro": {
+      "name": "Hyro",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$20M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Conversational AI platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "infinitus": {
+      "name": "Infinitus",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$50M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Healthcare AI automation",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "ironclad": {
+      "name": "Ironclad",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$150M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series E, Valuation $1.5B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "legal"
+      ]
+    },
+    "kore-ai": {
+      "name": "Kore.ai",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$150M+",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series D",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "conversational-ai"
+      ]
+    },
+    "legora": {
+      "name": "Legora",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$3M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Legal AI platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "leena-ai": {
+      "name": "Leena AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$30M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "HR employee experience platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "liveperson": {
+      "name": "LivePerson",
+      "revenue": "$400M+",
+      "revenue_year": "2023",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$200M+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "luminance": {
+      "name": "Luminance",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$40M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Legal AI platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "maisa": {
+      "name": "Maisa",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$25M",
+      "fundraise_date": "2025",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Funding round reported Aug 2025",
+      "segment": "AI employees / digital workers"
+    },
+    "moveworks": {
+      "name": "Moveworks",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$310M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C, Valuation $2.1B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "notable": {
+      "name": "Notable",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$100M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Healthcare automation platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "healthcare"
+      ]
+    },
+    "observe-ai": {
+      "name": "Observe.AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$125M",
+      "fundraise_date": "2021",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "palo-alto-networks-cortex-agentix": {
+      "name": "Palo Alto Networks (Cortex AgentiX)",
+      "revenue": "$7.5B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$100B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "Vertical-specific",
+      "tags": [
+        "security",
+        "vertical-specific"
+      ]
+    },
+    "paradox": {
+      "name": "Paradox",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$200M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C, Valuation $1.5B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "hr",
+        "vertical-specific"
+      ]
+    },
+    "parloa": {
+      "name": "Parloa",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$20M+",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Contact center automation platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "polyai": {
+      "name": "PolyAI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$50M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "qventus": {
+      "name": "Qventus",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$50M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Healthcare operations platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific",
+        "healthcare"
+      ]
+    },
+    "replicant": {
+      "name": "Replicant",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$78M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "serval": {
+      "name": "Serval",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$127M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "IT support platform",
+      "segment": "AI employees / digital workers"
+    },
+    "sierra": {
+      "name": "Sierra",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$110M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "swimlane": {
+      "name": "Swimlane",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$70M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "Vertical-specific",
+      "tags": [
+        "security",
+        "vertical-specific"
+      ]
+    },
+    "tines": {
+      "name": "Tines",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$50M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "security",
+        "vertical-specific"
+      ]
+    },
+    "torq": {
+      "name": "Torq",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$50M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "security",
+        "vertical-specific"
+      ]
+    },
+    "uniphore": {
+      "name": "Uniphore",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$400M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series E, Valuation $2.5B",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "vic-ai": {
+      "name": "Vic.ai",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$50M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Accounting AI platform",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "yellow-ai": {
+      "name": "Yellow.ai",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$78M",
+      "fundraise_date": "2022",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series C",
+      "segment": "Vertical-specific",
+      "tags": [
+        "vertical-specific"
+      ]
+    },
+    "a37": {
+      "name": "a37",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Early-stage startup, funding not publicly disclosed",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "anguliyam-ai": {
+      "name": "Anguliyam AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$500K",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI platform",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "avenue-code-agentic-ai-jumpstart": {
+      "name": "Avenue Code (Agentic AI JumpStart)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services division, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "centric-consulting-ai-agent-development-services": {
+      "name": "Centric Consulting (AI Agent Development Services)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services division, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "customer-support",
+        "consulting"
+      ]
+    },
+    "dura-digital-ai-agents-studio": {
+      "name": "Dura Digital (AI Agents Studio)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services division, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "hwah-industries-llc": {
+      "name": "HWAH Industries LLC",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "harbinger-agentic-ai-studio": {
+      "name": "Harbinger (Agentic AI Studio)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services division, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "harte-io": {
+      "name": "Harte.io",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI platform",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "infosys-agentic-foundry": {
+      "name": "Infosys (Agentic Foundry)",
+      "revenue": "$18.6B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$80B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": "Public company (NYSE: INFY)",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "invisible-technologies": {
+      "name": "Invisible Technologies",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$10M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI workforce platform",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "keepler-ai-agents-jumpstart-program": {
+      "name": "Keepler (AI Agents Jumpstart Program)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services program, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "msh-ai-prototype-studio": {
+      "name": "MSH (AI Prototype Studio)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services division, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "murphbeck-technologies": {
+      "name": "Murphbeck Technologies",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "prodapt-agentic-solutions-for-autonomous-operations": {
+      "name": "Prodapt (Agentic solutions for autonomous operations)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services division, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "resolute-software-ai-jumpstart": {
+      "name": "Resolute Software (AI Jumpstart)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Consulting services program, revenue-based business model",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "sagebrush-labs": {
+      "name": "Sagebrush Labs",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI platform",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "shipai": {
+      "name": "ShipAi",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI platform",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "sirkupai": {
+      "name": "SirkupAI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$500K",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI platform",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "tcs-mastercraft-genai-agentic-ai": {
+      "name": "TCS (MasterCraft, GenAI + Agentic AI)",
+      "revenue": "$29.1B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$170B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": "Public company (NSE: TCS)",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "wipro-agentic-ai-solutions": {
+      "name": "Wipro (Agentic AI solutions)",
+      "revenue": "$11.2B",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$30B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": "Public company (NYSE: WIT)",
+      "segment": "Agent Studios",
+      "tags": [
+        "services",
+        "consulting"
+      ]
+    },
+    "11x": {
+      "name": "11x",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Early-stage startup, funding not publicly disclosed",
+      "segment": "AI employees / digital workers"
+    },
+    "artisan": {
+      "name": "Artisan",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$25M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A, ARR ~$5M",
+      "segment": "AI employees / digital workers"
+    },
+    "cognition-devin": {
+      "name": "Cognition (Devin)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$175M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series B, Valuation $2B",
+      "segment": "AI employees / digital workers"
+    },
+    "cykel-ai": {
+      "name": "Cykel AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI platform",
+      "segment": "AI employees / digital workers"
+    },
+    "gain": {
+      "name": "Gain",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI employees platform",
+      "segment": "AI employees / digital workers"
+    },
+    "implement-ai": {
+      "name": "Implement AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI employees platform",
+      "segment": "AI employees / digital workers"
+    },
+    "leaping-ai": {
+      "name": "Leaping AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI employees platform",
+      "segment": "AI employees / digital workers"
+    },
+    "lindy": {
+      "name": "Lindy",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$6M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Seed",
+      "segment": "AI employees / digital workers"
+    },
+    "mentium": {
+      "name": "Mentium",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI employees platform",
+      "segment": "AI employees / digital workers"
+    },
+    "motion": {
+      "name": "Motion",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$15M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI productivity platform",
+      "segment": "AI employees / digital workers"
+    },
+    "novoflow-yc": {
+      "name": "Novoflow (YC)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$500K+",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "YC batch",
+      "segment": "AI employees / digital workers"
+    },
+    "oracle-ai-agents-for-sales": {
+      "name": "Oracle (AI agents for sales)",
+      "revenue": "$50B+",
+      "revenue_year": "2024",
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": "$400B+",
+      "market_cap_date": "2024",
+      "source": null,
+      "notes": null,
+      "segment": "AI employees / digital workers",
+      "tags": [
+        "sales"
+      ]
+    },
+    "podium": {
+      "name": "Podium",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$200M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Local business platform",
+      "segment": "AI employees / digital workers"
+    },
+    "sandra-ai-yc": {
+      "name": "Sandra AI (YC)",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$500K+",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "YC batch",
+      "segment": "AI employees / digital workers"
+    },
+    "sema4-ai": {
+      "name": "Sema4.ai",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$55.5M",
+      "fundraise_date": "2025",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A extension $25M (Jun 2025), bringing total Series A to $55.5M",
+      "segment": "AI employees / digital workers"
+    },
+    "sintra": {
+      "name": "Sintra",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$2M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI automation",
+      "segment": "AI employees / digital workers"
+    },
+    "spara": {
+      "name": "Spara",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$1M",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI automation",
+      "segment": "AI employees / digital workers"
+    },
+    "venta-ai": {
+      "name": "Venta AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$500K",
+      "fundraise_date": "2024",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "AI automation",
+      "segment": "AI employees / digital workers"
+    },
+    "withforge": {
+      "name": "WithForge",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": null,
+      "fundraise_date": null,
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Backed by Founders Fund and OpenAI Startup Fund. Funding amount not publicly disclosed.",
+      "segment": "Agent Studios",
+      "tags": [
+        "agent-studios",
+        "ai-systems-studios"
+      ]
+    },
+    "flowx-ai": {
+      "name": "FlowX.AI",
+      "revenue": null,
+      "revenue_year": null,
+      "fundraise": "$43.5M",
+      "fundraise_date": "2023",
+      "market_cap": null,
+      "market_cap_date": null,
+      "source": null,
+      "notes": "Series A round (2023). AI-powered platform for modernizing large financial institutions.",
+      "segment": "Agent Studios",
+      "tags": [
+        "agent-studios",
+        "ai-systems-studios"
+      ]
+    }
+  }
+}

@@ -6,7 +6,7 @@
 2) No-code & visual AI agent / workflow designers (includes automation subset)  
 3) Vertical-specific agent builder platforms  
 4) Agent studios & “Human+ software” companies  
-5) Overlay: “AI employees” narrative (cross-segment)
+5) AI employees / digital workers (cross-segment)
 
 ## Chapters and slides (presentation order)
 
@@ -24,12 +24,13 @@
 07. `part-1-market-segments/07_no_code_visual_and_automation.md` — Company Type 2: No-code & visual (incl. automation subset)  
 08. `part-1-market-segments/08_vertical_specific_platforms.md` — Company Type 3: Vertical-specific agent builder platforms  
 09. `part-1-market-segments/09_agent_studios_human_plus.md` — Company Type 4: Agent studios & “Human+ software” companies  
-10. `part-1-market-segments/10_ai_employees_overlay.md` — Company Type 5 (overlay): “AI employees” narrative
+10. `part-1-market-segments/10_ai_employees_overlay.md` — Company Type 5: AI employees / digital workers
 
-### Part 2 — Summary (page 11)
+### Part 2 — Summary (pages 11–12)
 
 11. `part-2-summary/11_projection_frame.md` — Summary: observations + projection frame
+12. `part-2-summary/12_funding_and_traction_appendix.md` — Appendix: public funding & traction signals
 
-**Total slides:** 11
+**Total slides:** 12
 
 Order is defined in `deck.md`.

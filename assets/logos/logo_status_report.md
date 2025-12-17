@@ -16,7 +16,7 @@
 - **Segment 2: No-code & Visual:** 51 companies ✅ Complete
 - **Segment 3: Vertical-specific:** 44 companies ✅ Complete
 - **Segment 4: Agent Studios:** 20 companies ✅ Complete
-- **Segment 5: AI Employees Overlay:** 21 companies ✅ Complete
+- **Segment 5: AI employees / digital workers:** 21 companies ✅ Complete
 
 ---
 

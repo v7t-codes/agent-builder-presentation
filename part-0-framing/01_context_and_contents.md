@@ -6,20 +6,27 @@ status: "Draft"
 
 # Agent OS & the Agent Builder Market Map
 
-## Context
+## What an “agent” is
 
-- Agents are becoming a new software interface: goal → observe → act → update state → loop.
-- The durable problem is turning that loop into **safe, auditable, production behavior**.
+Agents are software systems that can take actions on a user’s behalf, using tools and state, and improving over time.
+They are increasingly used to automate parts of human work, from simple workflow steps to long-horizon tasks that touch production systems.
 
-## What I’m about to present (contents)
+## Autonomy is increasing
 
-- Premise: **agent kernels** and the scaffolding around an LLM
-- How real agents are **domain adaptations** of the same architecture (clear example)
-- Baselines & benchmarks: why scaffolding is necessary today (and shrinks over time)
-- Market map: **5 segments** (4 company types + the “AI employees” overlay)
-- Summary: where value accrues, and how to reason about investable wedges
+As agents become more capable, the user moves from operating every step to supervising outcomes.
+This is the core reason the “builder market” exists: higher autonomy requires stronger scaffolding.
 
-## How to navigate
+![](assets/diagrams/autonomy_levels.png)
 
-- Use left/right arrow keys
-- Or the bottom-right controls (click or tap)
+## Why the “Agent Builder” market exists
+
+Baseline models can reason and call tools, but production automation needs more than reasoning.
+Teams need deployment, permissions, auditability, evaluation, and reliable execution surfaces so agents can act safely.
+
+## What I’m about to present
+
+- Define the **agent kernel** as the unit, and **scaffolding** as the differentiator.
+- Show how real-world agents are **domain adaptations** of the same architecture.
+- Ground the discussion in **baselines + benchmarks** to show why scaffolding is still necessary.
+- Map the agent builder market into **five segments** and list **verified companies** in each.
+- Summarize **where value accrues** and what makes a segment **investable**.
